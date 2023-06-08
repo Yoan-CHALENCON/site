@@ -7,15 +7,22 @@ body{
 }
 
 #main{
+    /*background-color: aqua;*/
     width: 100%;
     text-align: center;
+    justify-content: center;
 }
 
 h1{
     font-size: 800%;
+    margin: 0;
 }
 
 h2{
     color: #f0f0f0;
     font-size: 400%;
+}
+
+a{
+    text-decoration: none;
 }
