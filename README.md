@@ -10,5 +10,5 @@ __© 2023 CHALENCON Yoan. Tous droits réservés.__
 17 Juin 2023 : Modification des branches du repository.
   Mise en place de la branche dédiée à la maintenance et déplacement des fichiers.
 
-_23 Juin 2023 : Date théorique d'ouverture du site._
-  _Upload de l'ensemble des fichiers du site._
+20 Juin 2023 : Ouverture du site.
+  Upload de l'ensemble des fichiers du site.
