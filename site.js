@@ -111,9 +111,11 @@ function to_light(){
         document.getElementById('button1').style.color = '#f0f0f0'
         document.getElementById('button2').style.color = '#f0f0f0'
         document.getElementById('button3').style.color = '#f0f0f0'
+        document.getElementById('button4').style.color = '#f0f0f0'
         document.getElementById('mail_logo').setAttribute('src', 'Assets/icon_mail_light.svg')
         document.getElementById('twitter_logo').setAttribute('src', 'Assets/Logos/twitter_light.svg')
         document.getElementById('discord_logo').setAttribute('src', 'Assets/Logos/discord_light.svg')
+        document.getElementById('linkedin_logo').setAttribute('src', 'Assets/Logos/linkedin_light.svg')
     }
 
     if (document.title == "CHALENCON Yoan | Conditions Générales d'Utilisation" || document.title == 'CHALENCON Yoan | Mentions Légales' || document.title == 'CHALENCON Yoan | Politique de Confidentialité'){
@@ -195,9 +197,11 @@ function to_dark(){
         document.getElementById('button1').style.color = '#0b0b0b'
         document.getElementById('button2').style.color = '#0b0b0b'
         document.getElementById('button3').style.color = '#0b0b0b'
+        document.getElementById('button4').style.color = '#0b0b0b'
         document.getElementById('mail_logo').setAttribute('src', 'Assets/icon_mail_dark.svg')
         document.getElementById('twitter_logo').setAttribute('src', 'Assets/Logos/twitter_dark.svg')
         document.getElementById('discord_logo').setAttribute('src', 'Assets/Logos/discord_dark.svg')
+        document.getElementById('linkedin_logo').setAttribute('src', 'Assets/Logos/linkedin_dark.svg')
     }
 
     if (document.title == "CHALENCON Yoan | Conditions Générales d'Utilisation" || document.title == 'CHALENCON Yoan | Mentions Légales' || document.title == 'CHALENCON Yoan | Politique de Confidentialité'){
