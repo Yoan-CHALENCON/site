@@ -96,7 +96,7 @@ function to_light(){
         for (var i = 0; i < buttons.length; i++) {
             buttons[i].setAttribute('src', 'Assets/Logos/figma_border_light.svg');
         }
-        var telechargement = document.querySelectorAll('.real_button');
+        var telechargement = document.querySelectorAll('.real_button_design');
         for (var i = 0; i < telechargement.length; i++) {
             telechargement[i].style.color = '#f0f0f0';
         }
@@ -182,7 +182,7 @@ function to_dark(){
         for (var i = 0; i < buttons.length; i++) {
             buttons[i].setAttribute('src', 'Assets/Logos/figma_border_dark.svg');
         }
-        var telechargement = document.querySelectorAll('.real_button');
+        var telechargement = document.querySelectorAll('.real_button_design');
         for (var i = 0; i < telechargement.length; i++) {
             telechargement[i].style.color = '#0b0b0b';
         }
