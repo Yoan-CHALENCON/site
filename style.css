@@ -70,6 +70,10 @@ li{
     max-width: 60px;
 }
 
+#switch img:hover{
+    cursor: pointer;
+}
+
 #arrow_top{
     height: 50px;
     position: fixed;
