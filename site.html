@@ -35,6 +35,11 @@
                     <p><a href="benevolat.html" id="benevolat" onmouseover="underline('benevolat')" onmouseout="underline_off('benevolat')">Bénévolat</a></p>
                 </li>
             </nav>
+            <div id="nav_mobile">
+                <a id="open_menu" onclick="openMenu()">
+                    <img src="Assets/burger_menu_light.svg" id="menu_burger">
+                </a>
+            </div>
             <div id="logo">
                 <img src="Assets/profil_picture_square_rounded.png">
             </div>
@@ -42,6 +47,28 @@
             <img src="Assets/switch_ios_right.svg" id="switch_dl" onclick="switch_dark_light_mode()" onmousedown="press()">
             </div>
         </header>
+        <div id="burger_menu" class="menu">
+            <a id="close_menu" class="close">
+                <img src="Assets/cross_light.svg" onclick="closeMenu()" id="cross">
+            </a>
+            <ul>
+                <li>
+                    <p><a href="index.html" id="accueil_bm" onmouseover="underline('accueil_bm')" onmouseout="underline_off('accueil_bm')">Accueil</a></p>
+                </li>
+                <li>
+                    <p><a href="python.html" id="python_bm" onmouseover="underline('python_bm')" onmouseout="underline_off('python_bm')">Python</a></p>
+                </li>
+                <li>
+                    <p class="active">Site Internet</p>
+                </li>
+                <li>
+                    <p><a href="design.html" id="design_bm" onmouseover="underline('design_bm')" onmouseout="underline_off('design_bm')">Design</a></p>
+                </li>
+                <li>
+                    <p><a href="benevolat.html" id="benevolat_bm" onmouseover="underline('benevolat_bm')" onmouseout="underline_off('benevolat_bm')">Bénévolat</a></p>
+                </li>
+            </ul>
+        </div>
         <a href="#top"><img src="Assets/arrow_up_circle_light.svg" id="arrow_top"></a>
         <div id="corps">
         <div id="title">

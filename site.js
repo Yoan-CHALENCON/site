@@ -60,7 +60,11 @@ function to_light(){
     document.getElementById('switch_dl').setAttribute('src', 'Assets/switch_ios_left.svg')
     document.getElementById('pied').style.borderTopColor = 'rgba(11, 11, 11, 0.5)'
     document.getElementById('arrow_top').setAttribute('src', 'Assets/arrow_up_circle_dark.svg')
-    
+    document.getElementById('menu_burger').setAttribute('src', 'Assets/burger_menu_dark.svg')
+    document.getElementById("burger_menu").style.borderRightColor = 'rgba(11, 11, 11, 0.5)'
+    document.getElementById("burger_menu").style.backgroundColor = '#F0F0F0'
+    document.getElementById("cross").setAttribute("src", "Assets/cross_dark.svg")
+
     if (document.title == 'CHALENCON Yoan | Accueil'){
         document.getElementById('icon_cta').setAttribute('src', 'Assets/arrow_down_circle_light.svg')
         document.getElementById('cta_accueil').style.color = '#f0f0f0'
@@ -147,6 +151,10 @@ function to_dark(){
     document.getElementById('switch_dl').setAttribute('src', 'Assets/switch_ios_right.svg')
     document.getElementById('pied').style.borderTopColor = 'rgba(240, 240, 240, 0.5)'
     document.getElementById('arrow_top').setAttribute('src', 'Assets/arrow_up_circle_light.svg')
+    document.getElementById('menu_burger').setAttribute('src', 'Assets/burger_menu_light.svg')
+    document.getElementById("burger_menu").style.borderRightColor = 'rgba(240, 240, 240, 0.5)'
+    document.getElementById("burger_menu").style.backgroundColor = '#0B0B0B'
+    document.getElementById("cross").setAttribute("src", "Assets/cross_light.svg")
     
     if (document.title == 'CHALENCON Yoan | Accueil'){
         document.getElementById('cta_accueil').style.color = '#0b0b0b'
@@ -216,4 +224,12 @@ function to_dark(){
         document.getElementById("button_download").style.color = '#0b0b0b'
         document.getElementById("icon_dl_contrat").setAttribute('src', 'Assets/icon_download_dark.svg')
     }
+}
+
+function openMenu(){
+    document.getElementById("burger_menu").classList.add("active");
+}
+
+function closeMenu(){
+    document.getElementById("burger_menu").classList.remove("active");
 }

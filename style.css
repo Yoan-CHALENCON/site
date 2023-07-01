@@ -81,6 +81,14 @@ li{
     right: 20px;
 }
 
+#nav_mobile{
+    display: none;
+}
+
+#burger_menu{
+    display: none;
+}
+
 #corps{
     /*background-color: green;*/
     width: 100%;
@@ -561,4 +569,130 @@ pre{
     font-weight: lighter;
     font-size: 20px;
     margin: 0;
+}
+
+@media (width < 1050px){
+    nav{
+        background-color: blue;
+        display: none;
+    }
+
+    #nav_mobile{
+        /*background-color: purple;*/
+        width: 40%;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        padding-left: 5%;
+    }
+
+    #open_menu img:hover{
+        cursor: pointer;
+    }
+
+    #burger_menu{
+        display: block;
+        padding-top: 20px;
+    }
+
+    .menu{
+        background-color: #0b0b0b;
+        border-right: 1px solid rgba(240, 240, 240, 0.5);
+        height: 100%;
+        width: 250px;
+        position: fixed;
+        top: 0;
+        left: -251;
+        transition: left 0.5s ease-in-out;
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    .menu li{
+        margin-top: 50px;
+    }
+
+    .menu.active{
+        left: 0;
+    }
+
+    #close_menu{
+        /*background-color: red;*/
+        margin-left: 180px;
+    }
+
+    #close_menu img:hover{
+        cursor: pointer;
+    }
+
+    #cross{
+        width: 50px;
+    }
+
+    #nav_mobile img{
+        height: 60%;
+    }
+
+    #logo{
+        /*background-color: red;*/
+        width: 20%;
+    }
+    
+    #switch{
+        /*background-color: yellow;*/
+        width: 40%;
+        padding-left: 5%;
+    }
+
+    #switch img{
+        width: 40%;
+    }
+
+    h1{
+        font-size: 90px;
+    }
+
+    h2{
+        font-size: 30px;
+    }
+
+    h3{
+        font-size: 30px;
+    }
+
+    h4{
+        font-size: 60px;
+    }
+
+    #presentation p{
+        font-size: 30px;
+    }
+
+    #subtitle{
+        font-size: 50px;
+    }
+
+    #reals{
+        font-size: 30px;
+    }
+
+    .real_title{
+        font-size: 50px;
+    }
+
+    .contact_name{
+        font-size: 40px;
+    }
+
+    #intro{
+        font-size: 30px;
+    }
+
+    #contrat{
+        font-size: 30px;
+    }
+
+    .article_title{
+        font-size: 50px;
+    }
 }
