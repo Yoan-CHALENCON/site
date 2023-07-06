@@ -533,11 +533,12 @@ footer{
     /*background-color: green;*/
     height: 50%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
-#buttons_footer p{
+#buttons_footer pre{
     text-align: center;
     font-size: 20px;
 }
@@ -564,11 +565,14 @@ footer{
 }
 
 pre{
-    color: #FF6B18;
     font-family: Roboto;
     font-weight: lighter;
     font-size: 20px;
     margin: 0;
+}
+
+#active_footer{
+    color: #FF6B18;
 }
 
 @media (width < 1050px){
@@ -609,7 +613,7 @@ pre{
     }
 
     .menu li{
-        margin-top: 50px;
+        margin-top: 100px;
     }
 
     .menu.active{
@@ -694,5 +698,17 @@ pre{
 
     .article_title{
         font-size: 50px;
+    }
+
+    #copyright p{
+        font-size: 30px;
+    }
+
+    #buttons_footer a{
+        font-size: 30px;
+    }
+
+    #buttons_footer pre{
+        font-size: 30px;
     }
 }
