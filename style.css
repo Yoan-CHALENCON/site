@@ -145,4 +145,8 @@ footer{
     h2{
         font-size: 30px;
     }
+
+    #copyright p{
+        font-size: 30px;
+    }
 }
