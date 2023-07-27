@@ -24,3 +24,9 @@ __© 2023 CHALENCON Yoan. Tous droits réservés.__
 
 6 Juin 2023 : MÀJ Texte / Prise en charge version mobile du footer.
   Corrections d'erreurs d'orthographe et de syntaxe. Mise à jour des informations qui ont évolué. Ajout de la prise en charge mobile sur le footer (taille de la police).
+
+26 Juillet 2023 : MÀJ du logo de Twitter.
+  Mise en place du nouveau logo de Twitter sur la page "Contact" suite au changement effectué par Elon MUSK.
+
+27 Juillet 2023 : Modification du nom de Twitter.
+  Adaptation du nouveau nom de ce réseau social, Twitter s'appelle désormais 𝕏.
