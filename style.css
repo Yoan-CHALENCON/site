@@ -348,7 +348,7 @@ h4{
 
 .real_button{
     background-color: #FF6B18;
-    width: 400;
+    width: 400px;
     height: 100px;
     border-radius: 20px;
     display: flex;
@@ -711,4 +711,9 @@ pre{
     #buttons_footer pre{
         font-size: 30px;
     }
+}
+
+
+.hover:hover, #link_python:hover, #link_site_internet:hover, #link_design:hover, #link_benevolat:hover, #link_contact_article1_1:hover, #link_contact_article1_2:hover, #link_mentions_legales_article1:hover, #link_contact_article8:hover, #link_contact_article1:hover, #link_contact_article6:hover, #link_contact_article3:hover{
+    text-decoration: underline;
 }
