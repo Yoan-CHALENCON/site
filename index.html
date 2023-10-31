@@ -1,163 +1,269 @@
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>CHALENCON Yoan | Accueil</title>
-        <link rel="stylesheet"
-        href="style.css">
-        <link rel="shortcut icon" href="Assets/profil_picture_square_rounded.png" />
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-1NS1LP7KEQ"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+  <head>
+    <meta charset="utf-8" />
+    <title>CHALENCON Yoan | Accueil</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="Assets/profil_picture_square_rounded.png" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-J7LWMP39SR"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-        gtag('config', 'G-1NS1LP7KEQ');
-        </script>
-    </head>
+      gtag("config", "G-J7LWMP39SR");
+    </script>
+  </head>
 
-    <body>
-        <header id="navbar">
-            <nav>
-                <li>
-                    <p class="active">Accueil</p>
-                </li>
-                <li>
-                    <p><a href="python.html" id="python" class="hover">Python</a></p>
-                </li>
-                <li>
-                    <p><a href="site.html" id="site_internet" class="hover">Site Internet</a></p>
-                </li>
-                <li>
-                    <p><a href="design.html" id="design" class="hover">Design</a></p>
-                </li>
-                <li>
-                    <p><a href="benevolat.html" id="benevolat" class="hover">Bénévolat</a></p>
-                </li>
-            </nav>
-            <div id="nav_mobile">
-                <a id="open_menu" onclick="openMenu()">
-                    <img src="Assets/burger_menu_light.svg" id="menu_burger">
-                </a>
+  <body>
+    <header id="navbar">
+      <nav>
+        <li>
+          <p class="active">Accueil</p>
+        </li>
+        <li>
+          <p><a href="python.html" id="python" class="hover">Python</a></p>
+        </li>
+        <li>
+          <p>
+            <a href="site.html" id="site_internet" class="hover"
+              >Site Internet</a
+            >
+          </p>
+        </li>
+        <li>
+          <p><a href="design.html" id="design" class="hover">Design</a></p>
+        </li>
+        <li>
+          <p>
+            <a href="benevolat.html" id="benevolat" class="hover">Bénévolat</a>
+          </p>
+        </li>
+      </nav>
+      <div id="nav_mobile">
+        <a id="open_menu" onclick="openMenu()">
+          <img src="Assets/burger_menu_light.svg" id="menu_burger" />
+        </a>
+      </div>
+      <div id="logo">
+        <img src="Assets/profil_picture_square_rounded.png" />
+      </div>
+      <div id="switch">
+        <img
+          src="Assets/switch_ios_right.svg"
+          id="switch_dl"
+          onclick="switch_dark_light_mode()"
+          onmousedown="press()"
+        />
+      </div>
+    </header>
+    <div id="burger_menu" class="menu">
+      <a id="close_menu" class="close">
+        <img src="Assets/cross_light.svg" onclick="closeMenu()" id="cross" />
+      </a>
+      <ul>
+        <li>
+          <p class="active">Accueil</p>
+        </li>
+        <li>
+          <p><a href="python.html" id="python_bm" class="hover">Python</a></p>
+        </li>
+        <li>
+          <p>
+            <a href="site.html" id="site_internet_bm" class="hover"
+              >Site Internet</a
+            >
+          </p>
+        </li>
+        <li>
+          <p><a href="design.html" id="design_bm" class="hover">Design</a></p>
+        </li>
+        <li>
+          <p>
+            <a href="benevolat.html" id="benevolat_bm" class="hover"
+              >Bénévolat</a
+            >
+          </p>
+        </li>
+      </ul>
+    </div>
+    <a href="#top"
+      ><img src="Assets/arrow_up_circle_light.svg" id="arrow_top"
+    /></a>
+    <div id="corps">
+      <div id="title">
+        <h1>CHALENCON Yoan</h1>
+        <h2>
+          Passionné par l’informatique, les nouvelles technologies et l’espace.
+        </h2>
+      </div>
+      <div id="presentation">
+        <div id="image">
+          <div id="background">
+            <img
+              id="presentation_image_accueil"
+              src="Assets/profil_picture.jpg"
+            />
+            <div id="CTA">
+              <a href="#marge">
+                <img
+                  id="icon_cta"
+                  src="Assets/arrow_down_circle_dark.svg"
+                  onmouseover="underline('cta_accueil')"
+                  onmouseout="underline_off('cta_accueil')"
+                />
+              </a>
+              <a href="#marge">
+                <p
+                  id="cta_accueil"
+                  class="cta"
+                  onmouseover="underline('cta_accueil')"
+                  onmouseout="underline_off('cta_accueil')"
+                >
+                  Le détail de mon travail
+                </p>
+              </a>
             </div>
-            <div id="logo">
-                <img src="Assets/profil_picture_square_rounded.png">
-            </div>
-            <div id="switch">
-            <img src="Assets/switch_ios_right.svg" id="switch_dl" onclick="switch_dark_light_mode()" onmousedown="press()">
-            </div>
-        </header>
-        <div id="burger_menu" class="menu">
-            <a id="close_menu" class="close">
-                <img src="Assets/cross_light.svg" onclick="closeMenu()" id="cross">
-            </a>
-            <ul>
-                <li>
-                    <p class="active">Accueil</p>
-                </li>
-                <li>
-                    <p><a href="python.html" id="python_bm" class="hover">Python</a></p>
-                </li>
-                <li>
-                    <p><a href="site.html" id="site_internet_bm" class="hover">Site Internet</a></p>
-                </li>
-                <li>
-                    <p><a href="design.html" id="design_bm" class="hover">Design</a></p>
-                </li>
-                <li>
-                    <p><a href="benevolat.html" id="benevolat_bm" class="hover">Bénévolat</a></p>
-                </li>
-            </ul>
+          </div>
         </div>
-        <a href="#top"><img src="Assets/arrow_up_circle_light.svg" id="arrow_top"></a>
-        <div id="corps">
-        <div id="title">
-            <h1>CHALENCON Yoan</h1>
-            <h2>Passionné par l’informatique, les nouvelles technologies et l’espace.</h2>
+        <div id="text">
+          <div id="content">
+            <h3>ÉTUDIANT VALENTINOIS</h3>
+            <h4>Qui suis-je ?</h4>
+            <p>
+              Bonjour !
+              <br />
+              <br />Je m’appelle CHALENCON Yoan, j’ai 18 ans et je suis
+              originaire d'un petit village ardéchois. <br />Je viens de
+              commencer mes études supérieures. Je suis actuellement en première
+              année de BUT Informatique à l'IUT de Valence (Drôme). Ma passion
+              pour l’informatique m’a incité à choisir cette formation. Et, même
+              si je n'ai pas encore d'idée précise sur le métier que je souhaite
+              faire plus tard, je voudrais combiner ma passion et mon travail.
+              <br />
+              <br />Dans la vie, j’adore tout ce qui touche de près ou loin à
+              l’informatique et aux nouvelles technologies, il s’agit de vraies
+              passions pour moi ! Coder, designer, produire du contenu numérique
+              donc est devenu mon passe-temps favori. <br />De plus, le domaine
+              spatial m’intéresse aussi énormément, cela forme également une de
+              mes passions.
+              <br />
+              <br />Sur ce site, vous pouvez retrouver l’ensemble de mes
+              différentes réalisations, mes programmes Python, mes maquettes de
+              design, un site internet que j’ai réalisé ainsi que mon travail en
+              tant que bénévole.
+            </p>
+            <br /><br />
+            <p id="sign">CHALENCON Yoan</p>
+          </div>
         </div>
-        <div id="presentation">
-            <div id="image">
-                <div id="background">
-                    <img id="presentation_image_accueil" src="Assets/profil_picture.jpg">
-                    <div id="CTA">
-                        <a href="#marge">
-                            <img id="icon_cta" src="Assets/arrow_down_circle_dark.svg" onmouseover="underline('cta_accueil')" onmouseout="underline_off('cta_accueil')">
-                        </a>
-                        <a href="#marge">
-                        <p id="cta_accueil" class="cta" onmouseover="underline('cta_accueil')" onmouseout="underline_off('cta_accueil')">Le détail de mon travail</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div id="text">
-                <div id="content">
-                    <h3>ÉTUDIANT VALENTINOIS</h3>
-                    <h4>Qui suis-je ?</h4>
-                    <p>Bonjour !
-                        <br>
-                        <br>Je m’appelle CHALENCON Yoan, j’ai 18 ans et je suis originaire d'un petit village ardéchois.
-                        <br>Je viens de commencer mes études supérieures. Je suis actuellement en première année de BUT Informatique à l'IUT de Valence (Drôme). Ma passion pour l’informatique m’a incité à choisir cette formation. Et, même si je n'ai pas encore d'idée précise sur le métier que je souhaite faire plus tard, je voudrais combiner ma passion et mon travail.
-                        <br>
-                        <br>Dans la vie, j’adore tout ce qui touche de près ou loin à l’informatique et aux nouvelles technologies, il s’agit de vraies passions pour moi ! Coder, designer, produire du contenu numérique donc est devenu mon passe-temps favori.
-                        <br>De plus, le domaine spatial m’intéresse aussi énormément, cela forme également une de mes passions.
-                        <br>
-                        <br>Sur ce site, vous pouvez retrouver l’ensemble de mes différentes réalisations, mes programmes Python, mes maquettes de design, un site internet que j’ai réalisé ainsi que mon travail en tant que bénévole.
-                    </p>
-                    <br><br>
-                    <p id="sign">
-                        CHALENCON Yoan
-                    </p>
-                </div>
-            </div>
+      </div>
+      <div id="reals">
+        <div id="marge"></div>
+        <div id="real1">
+          <div class="real_text_left">
+            <p>
+              Lors de mes 2 années de spécialité Numérique & Sciences
+              Informatique (NSI) au lycée, j’ai pu apprendre à coder en langage
+              Python. J’ai également eu l’occasion de réaliser plusieurs projets
+              faisant intervenir la programmation en Python. Vous pouvez en
+              découvrir un échantillon sur la page “<a
+                href="python.html"
+                class="link"
+                id="link_python"
+                >Python</a
+              >”.
+            </p>
+          </div>
+          <div class="real_image">
+            <img src="Assets/Logos/python_light.svg" id="logo_python" />
+          </div>
         </div>
-        <div id="reals">
-            <div id="marge"></div>
-            <div id="real1">
-                <div class="real_text_left">
-                    <p>Lors de mes 2 années de spécialité Numérique & Sciences Informatique (NSI) au lycée, j’ai pu apprendre à coder en langage Python. J’ai également eu l’occasion de réaliser plusieurs projets faisant intervenir la programmation en Python. Vous pouvez en découvrir un échantillon sur la page “<a href="python.html" class="link" id="link_python">Python</a>”.</p>
-                </div>
-                <div class="real_image">
-                    <img src="Assets/Logos/python_light.svg" id="logo_python">
-                </div>
-            </div>
 
-            <div id="real2">
-                <div class="real_image">
-                    <img src="Assets/Logos/html_light.svg" id="logo_html">
-                </div>
-                <div class="real_text_right">
-                    <p>Toujours en spécialité Numérique & Sciences Informatiques (NSI), en Première, j’ai également pu apprendre les bases de l’HTML, du CSS ainsi qu’un peu de JavaScript. Le projet associé à ce chapitre consistait en une réalisation d'un site internet. Plus d’informations et lien du site sur la page “<a href="site.html" class="link" id="link_site_internet">Site Internet</a>”.</p>
-                </div>
-            </div>
-
-            <div id="real3">
-                <div class="real_text_left">
-                    <p>Lorsque j’ai découvert le monde du design, il y a maintenant presque 2 ans, cela m’a immédiatement intéressé. Je me suis alors lancé dans l’apprentissage de ce domaine, notamment avec l’utilisation de Figma®. Pour commencer, j’ai réalisé plusieurs maquettes de reproduction de designs déjà existants en guise d’entraînement, certaines d’entre elles sont disponibles sur la page “<a href="design.html" class="link" id="link_design">Design</a>”.</p>
-                </div>
-                <div class="real_image">
-                    <img src="Assets/Logos/figma_light.svg" id="logo_figma">
-                </div>
-            </div>
-
-            <div id="real4">
-                <div class="real_image">
-                    <img src="Assets/Logos/hugodecrypte.svg">
-                </div>
-                <div class="real_text_right">
-                    <p>HugoDécrypte est un média 100 % numérique fondé par Hugo TRAVERS. Je fais partie de l’équipe de bénévoles de ce média. Plus précisément, je suis Helper sur son serveur Discord®. Un investissement important mais qui me plaît, aider chacun à avoir accès à l’actualité le plus simplement possible est un de mes objectifs. Retrouvez toutes les informations à ce sujet sur la page “<a href="benevolat.html" class="link" id="link_benevolat">Bénévolat</a>”.</p>
-                </div>
-            </div>
-
+        <div id="real2">
+          <div class="real_image">
+            <img src="Assets/Logos/html_light.svg" id="logo_html" />
+          </div>
+          <div class="real_text_right">
+            <p>
+              Toujours en spécialité Numérique & Sciences Informatiques (NSI),
+              en Première, j’ai également pu apprendre les bases de l’HTML, du
+              CSS ainsi qu’un peu de JavaScript. Le projet associé à ce chapitre
+              consistait en une réalisation d'un site internet. Plus
+              d’informations et lien du site sur la page “<a
+                href="site.html"
+                class="link"
+                id="link_site_internet"
+                >Site Internet</a
+              >”.
+            </p>
+          </div>
         </div>
-        <footer id="pied">
-            <div id="buttons_footer">
-                <pre class="hover"><a href="cgu.html" id="link_cgu">CGU</a></pre><pre> | </pre><pre class="hover"><a href="mentions-legales.html" id="link_mentions">Mentions Légales</a></pre><pre> | </pre><pre class="hover"><a href="pol-conf.html" id="link_pol_conf">Politique de Confidentialité</a></pre><pre> | </pre><pre class="hover"><a href="contact.html" id="link_contact">Contact</a></pre>
-            </div>
-            <div id="copyright">
-                <p>© 2023 CHALENCON Yoan. Tous droits réservés.</p>
-            </div>
-        </footer>
+
+        <div id="real3">
+          <div class="real_text_left">
+            <p>
+              Lorsque j’ai découvert le monde du design, il y a maintenant
+              presque 2 ans, cela m’a immédiatement intéressé. Je me suis alors
+              lancé dans l’apprentissage de ce domaine, notamment avec
+              l’utilisation de Figma®. Pour commencer, j’ai réalisé plusieurs
+              maquettes de reproduction de designs déjà existants en guise
+              d’entraînement, certaines d’entre elles sont disponibles sur la
+              page “<a href="design.html" class="link" id="link_design"
+                >Design</a
+              >”.
+            </p>
+          </div>
+          <div class="real_image">
+            <img src="Assets/Logos/figma_light.svg" id="logo_figma" />
+          </div>
         </div>
-        <script src="site.js"> </script>
-    </body>
+
+        <div id="real4">
+          <div class="real_image">
+            <img src="Assets/Logos/hugodecrypte.svg" />
+          </div>
+          <div class="real_text_right">
+            <p>
+              HugoDécrypte est un média 100 % numérique fondé par Hugo TRAVERS.
+              Je fais partie de l’équipe de bénévoles de ce média. Plus
+              précisément, je suis Helper sur son serveur Discord®. Un
+              investissement important mais qui me plaît, aider chacun à avoir
+              accès à l’actualité le plus simplement possible est un de mes
+              objectifs. Retrouvez toutes les informations à ce sujet sur la
+              page “<a href="benevolat.html" class="link" id="link_benevolat"
+                >Bénévolat</a
+              >”.
+            </p>
+          </div>
+        </div>
+      </div>
+      <footer id="pied">
+        <div id="buttons_footer">
+          <pre class="hover"><a href="cgu.html" id="link_cgu">CGU</a></pre>
+          <pre> | </pre>
+          <pre
+            class="hover"
+          ><a href="mentions-legales.html" id="link_mentions">Mentions Légales</a></pre>
+          <pre> | </pre>
+          <pre
+            class="hover"
+          ><a href="pol-conf.html" id="link_pol_conf">Politique de Confidentialité</a></pre>
+          <pre> | </pre>
+          <pre
+            class="hover"
+          ><a href="contact.html" id="link_contact">Contact</a></pre>
+        </div>
+        <div id="copyright">
+          <p>© 2023 CHALENCON Yoan. Tous droits réservés.</p>
+        </div>
+      </footer>
+    </div>
+    <script src="site.js"></script>
+  </body>
 </html>

@@ -1,117 +1,175 @@
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>CHALENCON Yoan | Site Internet</title>
-        <link rel="stylesheet"
-        href="style.css">
-        <link rel="shortcut icon" href="Assets/icon_tintin.png" />
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-1NS1LP7KEQ"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+  <head>
+    <meta charset="utf-8" />
+    <title>CHALENCON Yoan | Site Internet</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="Assets/icon_tintin.png" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-J7LWMP39SR"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-        gtag('config', 'G-1NS1LP7KEQ');
-        </script>
-    </head>
+      gtag("config", "G-J7LWMP39SR");
+    </script>
+  </head>
 
-    <body>
-        <header id="navbar">
-            <nav>
-                <li>
-                    <p><a href="index.html" id="accueil" class="hover">Accueil</a></p>
-                </li>
-                <li>
-                    <p><a href="python.html" id="python" class="hover">Python</a></p>
-                </li>
-                <li>
-                    <p class="active">Site Internet</p>
-                </li>
-                <li>
-                    <p><a href="design.html" id="design" class="hover">Design</a></p>
-                </li>
-                <li>
-                    <p><a href="benevolat.html" id="benevolat" class="hover">Bénévolat</a></p>
-                </li>
-            </nav>
-            <div id="nav_mobile">
-                <a id="open_menu" onclick="openMenu()">
-                    <img src="Assets/burger_menu_light.svg" id="menu_burger">
-                </a>
+  <body>
+    <header id="navbar">
+      <nav>
+        <li>
+          <p><a href="index.html" id="accueil" class="hover">Accueil</a></p>
+        </li>
+        <li>
+          <p><a href="python.html" id="python" class="hover">Python</a></p>
+        </li>
+        <li>
+          <p class="active">Site Internet</p>
+        </li>
+        <li>
+          <p><a href="design.html" id="design" class="hover">Design</a></p>
+        </li>
+        <li>
+          <p>
+            <a href="benevolat.html" id="benevolat" class="hover">Bénévolat</a>
+          </p>
+        </li>
+      </nav>
+      <div id="nav_mobile">
+        <a id="open_menu" onclick="openMenu()">
+          <img src="Assets/burger_menu_light.svg" id="menu_burger" />
+        </a>
+      </div>
+      <div id="logo">
+        <img src="Assets/profil_picture_square_rounded.png" />
+      </div>
+      <div id="switch">
+        <img
+          src="Assets/switch_ios_right.svg"
+          id="switch_dl"
+          onclick="switch_dark_light_mode()"
+          onmousedown="press()"
+        />
+      </div>
+    </header>
+    <div id="burger_menu" class="menu">
+      <a id="close_menu" class="close">
+        <img src="Assets/cross_light.svg" onclick="closeMenu()" id="cross" />
+      </a>
+      <ul>
+        <li>
+          <p><a href="index.html" id="accueil_bm" class="hover">Accueil</a></p>
+        </li>
+        <li>
+          <p><a href="python.html" id="python_bm" class="hover">Python</a></p>
+        </li>
+        <li>
+          <p class="active">Site Internet</p>
+        </li>
+        <li>
+          <p><a href="design.html" id="design_bm" class="hover">Design</a></p>
+        </li>
+        <li>
+          <p>
+            <a href="benevolat.html" id="benevolat_bm" class="hover"
+              >Bénévolat</a
+            >
+          </p>
+        </li>
+      </ul>
+    </div>
+    <a href="#top"
+      ><img src="Assets/arrow_up_circle_light.svg" id="arrow_top"
+    /></a>
+    <div id="corps">
+      <div id="title">
+        <h1>Site Internet</h1>
+        <h2>Mon projet de réalisation d'un site internet.</h2>
+      </div>
+      <div id="presentation">
+        <div id="image">
+          <div id="background">
+            <img id="presentation_image" src="Assets/icon_tintin.png" />
+            <div id="CTA">
+              <a
+                href="https://github.com/CHALENCON-Yoan/site-tintin"
+                target="_blank"
+              >
+                <img
+                  id="icon_cta"
+                  src="Assets/Logos/github_dark.svg"
+                  onmouseover="underline('cta_accueil')"
+                  onmouseout="underline_off('cta_accueil')"
+                />
+              </a>
+              <a
+                href="https://github.com/CHALENCON-Yoan/site-tintin"
+                target="_blank"
+              >
+                <p
+                  id="cta_accueil"
+                  class="cta"
+                  onmouseover="underline('cta_accueil')"
+                  onmouseout="underline_off('cta_accueil')"
+                >
+                  Voir sur GitHub
+                </p>
+              </a>
             </div>
-            <div id="logo">
-                <img src="Assets/profil_picture_square_rounded.png">
-            </div>
-            <div id="switch">
-            <img src="Assets/switch_ios_right.svg" id="switch_dl" onclick="switch_dark_light_mode()" onmousedown="press()">
-            </div>
-        </header>
-        <div id="burger_menu" class="menu">
-            <a id="close_menu" class="close">
-                <img src="Assets/cross_light.svg" onclick="closeMenu()" id="cross">
-            </a>
-            <ul>
-                <li>
-                    <p><a href="index.html" id="accueil_bm" class="hover">Accueil</a></p>
-                </li>
-                <li>
-                    <p><a href="python.html" id="python_bm" class="hover">Python</a></p>
-                </li>
-                <li>
-                    <p class="active">Site Internet</p>
-                </li>
-                <li>
-                    <p><a href="design.html" id="design_bm" class="hover">Design</a></p>
-                </li>
-                <li>
-                    <p><a href="benevolat.html" id="benevolat_bm" class="hover">Bénévolat</a></p>
-                </li>
-            </ul>
+          </div>
         </div>
-        <a href="#top"><img src="Assets/arrow_up_circle_light.svg" id="arrow_top"></a>
-        <div id="corps">
-        <div id="title">
-            <h1>Site Internet</h1>
-            <h2>Mon projet de réalisation d'un site internet.</h2>
+        <div id="text">
+          <div id="content">
+            <h3>DÉVELOPPEUR WEB</h3>
+            <h4>Mon site internet sur Tintin</h4>
+            <p>
+              En classe de Première, nous avons appris a créer des sites
+              internet “basiques”.<br />En effet, nous avons acquis les bases du
+              langage HTML et celles du CSS. Nous avons également appris
+              quelques éléments de JavaScript. <br /><br />À la fin de ce
+              chapitre, nous avions pour objectif de réaliser un projet. Ce
+              projet consistait en la création d’un site internet. Le choix du
+              sujet, du thème et de l’objet du site était libre. Pour réaliser
+              ce site internet, nous étions en binôme. <br /><br />Avec mon
+              camarade, après beaucoup de réflexion, nous avons choisi de
+              réaliser notre site internet sur un célèbre personnage d’une bande
+              dessinée connue de tous. Nous avons pris la décision de faire
+              notre site sur Tintin. <br /><br />Avec notre site, nous
+              présentons l’histoire de Tintin, ses personnages, ses bande
+              dessinées mais également la série animée et le film qui en
+              découle. <br /><br />Les fichiers du site peuvent être téléchargés
+              ci-contre.
+            </p>
+          </div>
         </div>
-        <div id="presentation">
-            <div id="image">
-                <div id="background">
-                    <img id="presentation_image" src="Assets/icon_tintin.png">
-                    <div id="CTA">
-                        <a href="https://github.com/CHALENCON-Yoan/site-tintin" target="_blank">
-                            <img id="icon_cta" src="Assets/Logos/github_dark.svg" onmouseover="underline('cta_accueil')" onmouseout="underline_off('cta_accueil')">
-                        </a>
-                        <a href="https://github.com/CHALENCON-Yoan/site-tintin" target="_blank">
-                        <p id="cta_accueil" class="cta" onmouseover="underline('cta_accueil')" onmouseout="underline_off('cta_accueil')">Voir sur GitHub</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div id="text">
-                <div id="content">
-                    <h3>DÉVELOPPEUR WEB</h3>
-                    <h4>Mon site internet sur Tintin</h4>
-                    <p>
-                        En classe de Première, nous avons appris a créer des sites internet “basiques”.<br>En effet, nous avons acquis les bases du langage HTML et celles du CSS. Nous avons également appris quelques éléments de JavaScript.
-                        <br><br>À la fin de ce chapitre, nous avions pour objectif de réaliser un projet. Ce projet consistait en la création d’un site internet. Le choix du sujet, du thème et de l’objet du site était libre. Pour réaliser ce site internet, nous étions en binôme.
-                        <br><br>Avec mon camarade, après beaucoup de réflexion, nous avons choisi de réaliser notre site internet sur un célèbre personnage d’une bande dessinée connue de tous. Nous avons pris la décision de faire notre site sur Tintin.
-                        <br><br>Avec notre site, nous présentons l’histoire de Tintin, ses personnages, ses bande dessinées mais également la série animée et le film qui en découle.
-                        <br><br>Les fichiers du site peuvent être téléchargés ci-contre.
-                    </p>
-                </div>
-            </div>
+      </div>
+      <footer id="pied">
+        <div id="buttons_footer">
+          <pre class="hover"><a href="cgu.html" id="link_cgu">CGU</a></pre>
+          <pre> | </pre>
+          <pre
+            class="hover"
+          ><a href="mentions-legales.html" id="link_mentions">Mentions Légales</a></pre>
+          <pre> | </pre>
+          <pre
+            class="hover"
+          ><a href="pol-conf.html" id="link_pol_conf">Politique de Confidentialité</a></pre>
+          <pre> | </pre>
+          <pre
+            class="hover"
+          ><a href="contact.html" id="link_contact">Contact</a></pre>
         </div>
-        <footer id="pied">
-            <div id="buttons_footer">
-                <pre class="hover"><a href="cgu.html" id="link_cgu">CGU</a></pre><pre> | </pre><pre class="hover"><a href="mentions-legales.html" id="link_mentions">Mentions Légales</a></pre><pre> | </pre><pre class="hover"><a href="pol-conf.html" id="link_pol_conf">Politique de Confidentialité</a></pre><pre> | </pre><pre class="hover"><a href="contact.html" id="link_contact">Contact</a></pre>
-            </div>
-            <div id="copyright">
-                <p>© 2023 CHALENCON Yoan. Tous droits réservés.</p>
-            </div>
-        </footer>
+        <div id="copyright">
+          <p>© 2023 CHALENCON Yoan. Tous droits réservés.</p>
         </div>
-        <script src="site.js"> </script>
-    </body>
+      </footer>
+    </div>
+    <script src="site.js"></script>
+  </body>
 </html>
