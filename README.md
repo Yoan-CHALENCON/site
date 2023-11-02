@@ -41,3 +41,7 @@ Mise à jour des informations qui ont évolué. Précision sur le métier de Bas
 Modification du nom de domaine principal (chalenconyoan.cf -> chalenconyoan.com). Mise à jour de celui-ci dans les CGUs, les Mentions Légales et la Politique de Confidentialité.
 Modification de l'adresse mail de contact (chalenconyoanpro@gmail.com -> contact@chalenconyoan.com).
 Modification de la balise G-Analytics.
+
+2 Novembre 2023 : Rectificatif.
+Mise à jour de l'adresse mail de contact dans les CGUs et les Mentions Légales.
+Modification des chemins d'accès de la page 404 pour les passer en absolus.
