@@ -38,10 +38,10 @@ function getSavedMode(){
 
 function press(){
     if (localStorage.getItem('mode') == 'dark'){
-        document.getElementById('switch_dl').setAttribute('src', 'Assets/switch_ios_miright.svg')
+        document.getElementById('switch_dl').setAttribute('src', '/Assets/switch_ios_miright.svg')
     }
     else{
-        document.getElementById('switch_dl').setAttribute('src', 'Assets/switch_ios_mileft.svg')
+        document.getElementById('switch_dl').setAttribute('src', '/Assets/switch_ios_mileft.svg')
     }
 }
 
@@ -57,29 +57,29 @@ function to_light(){
     for (var i = 0; i < liens_no.length; i++) {
         liens_no[i].style.color = '#FF6B18';
     }
-    document.getElementById('switch_dl').setAttribute('src', 'Assets/switch_ios_left.svg')
+    document.getElementById('switch_dl').setAttribute('src', '/Assets/switch_ios_left.svg')
     document.getElementById('pied').style.borderTopColor = 'rgba(11, 11, 11, 0.5)'
-    document.getElementById('arrow_top').setAttribute('src', 'Assets/arrow_up_circle_dark.svg')
-    document.getElementById('menu_burger').setAttribute('src', 'Assets/burger_menu_dark.svg')
+    document.getElementById('arrow_top').setAttribute('src', '/Assets/arrow_up_circle_dark.svg')
+    document.getElementById('menu_burger').setAttribute('src', '/Assets/burger_menu_dark.svg')
     document.getElementById("burger_menu").style.borderRightColor = 'rgba(11, 11, 11, 0.5)'
     document.getElementById("burger_menu").style.backgroundColor = '#F0F0F0'
-    document.getElementById("cross").setAttribute("src", "Assets/cross_dark.svg")
+    document.getElementById("cross").setAttribute("src", "/Assets/cross_dark.svg")
 
     if (document.title == 'CHALENCON Yoan | Accueil'){
-        document.getElementById('icon_cta').setAttribute('src', 'Assets/arrow_down_circle_light.svg')
+        document.getElementById('icon_cta').setAttribute('src', '/Assets/arrow_down_circle_light.svg')
         document.getElementById('cta_accueil').style.color = '#f0f0f0'
-        document.getElementById('logo_python').setAttribute('src', 'Assets/Logos/python_dark.svg')
-        document.getElementById('logo_html').setAttribute('src', 'Assets/Logos/html_dark.svg')
-        document.getElementById('logo_figma').setAttribute('src', 'Assets/Logos/figma_dark.svg')
+        document.getElementById('logo_python').setAttribute('src', '/Assets/Logos/python_dark.svg')
+        document.getElementById('logo_html').setAttribute('src', '/Assets/Logos/html_dark.svg')
+        document.getElementById('logo_figma').setAttribute('src', '/Assets/Logos/figma_dark.svg')
     }
 
     if (document.title == 'CHALENCON Yoan | Python'){
         document.getElementById('cta_accueil').style.color = '#f0f0f0'
-        document.getElementById('icon_cta').setAttribute('src', 'Assets/arrow_down_circle_light.svg')
-        document.getElementById('presentation_image').setAttribute('src', 'Assets/Logos/python_dark.svg')
+        document.getElementById('icon_cta').setAttribute('src', '/Assets/arrow_down_circle_light.svg')
+        document.getElementById('presentation_image').setAttribute('src', '/Assets/Logos/python_dark.svg')
         var buttons = document.querySelectorAll('.logo_download');
         for (var i = 0; i < buttons.length; i++) {
-            buttons[i].setAttribute('src', 'Assets/icon_download_light.svg');
+            buttons[i].setAttribute('src', '/Assets/icon_download_light.svg');
         }
         var telechargement = document.querySelectorAll('.real_button');
         for (var i = 0; i < telechargement.length; i++) {
@@ -89,16 +89,16 @@ function to_light(){
 
     if (document.title == 'CHALENCON Yoan | Site Internet'){
         document.getElementById('cta_accueil').style.color = '#f0f0f0'
-        document.getElementById('icon_cta').setAttribute('src', 'Assets/Logos/github_light.svg')
+        document.getElementById('icon_cta').setAttribute('src', '/Assets/Logos/github_light.svg')
     }
 
     if (document.title == 'CHALENCON Yoan | Design'){
         document.getElementById('cta_accueil').style.color = '#f0f0f0'
-        document.getElementById('icon_cta').setAttribute('src', 'Assets/arrow_down_circle_light.svg')
-        document.getElementById('presentation_image').setAttribute('src', 'Assets/Logos/figma_dark.svg')
+        document.getElementById('icon_cta').setAttribute('src', '/Assets/arrow_down_circle_light.svg')
+        document.getElementById('presentation_image').setAttribute('src', '/Assets/Logos/figma_dark.svg')
         var buttons = document.querySelectorAll('.logo_open');
         for (var i = 0; i < buttons.length; i++) {
-            buttons[i].setAttribute('src', 'Assets/Logos/figma_border_light.svg');
+            buttons[i].setAttribute('src', '/Assets/Logos/figma_border_light.svg');
         }
         var telechargement = document.querySelectorAll('.real_button_design');
         for (var i = 0; i < telechargement.length; i++) {
@@ -108,7 +108,7 @@ function to_light(){
 
     if (document.title == 'CHALENCON Yoan | Bénévolat'){
         document.getElementById('cta_accueil').style.color = '#f0f0f0'
-        document.getElementById('icon_cta').setAttribute('src', 'Assets/Logos/discord_light.svg')
+        document.getElementById('icon_cta').setAttribute('src', '/Assets/Logos/discord_light.svg')
     }
 
     if (document.title == 'CHALENCON Yoan | Contact'){
@@ -116,10 +116,10 @@ function to_light(){
         document.getElementById('button2').style.color = '#f0f0f0'
         document.getElementById('button3').style.color = '#f0f0f0'
         document.getElementById('button4').style.color = '#f0f0f0'
-        document.getElementById('mail_logo').setAttribute('src', 'Assets/icon_mail_light.svg')
-        document.getElementById('twitter_logo').setAttribute('src', 'Assets/Logos/twitter_light.svg')
-        document.getElementById('discord_logo').setAttribute('src', 'Assets/Logos/discord_light.svg')
-        document.getElementById('linkedin_logo').setAttribute('src', 'Assets/Logos/linkedin_light.svg')
+        document.getElementById('mail_logo').setAttribute('src', '/Assets/icon_mail_light.svg')
+        document.getElementById('twitter_logo').setAttribute('src', '/Assets/Logos/twitter_light.svg')
+        document.getElementById('discord_logo').setAttribute('src', '/Assets/Logos/discord_light.svg')
+        document.getElementById('linkedin_logo').setAttribute('src', '/Assets/Logos/linkedin_light.svg')
     }
 
     if (document.title == "CHALENCON Yoan | Conditions Générales d'Utilisation" || document.title == 'CHALENCON Yoan | Mentions Légales' || document.title == 'CHALENCON Yoan | Politique de Confidentialité'){
@@ -132,7 +132,7 @@ function to_light(){
             links_intro[i].style.color = '#FF6B18';
         }
         document.getElementById("button_download").style.color = '#f0f0f0'
-        document.getElementById("icon_dl_contrat").setAttribute('src', 'Assets/icon_download_light.svg')
+        document.getElementById("icon_dl_contrat").setAttribute('src', '/Assets/icon_download_light.svg')
     }
 }
 
@@ -148,28 +148,28 @@ function to_dark(){
     for (var i = 0; i < liens_no.length; i++) {
         liens_no[i].style.color = '#FF6B18';
     }
-    document.getElementById('switch_dl').setAttribute('src', 'Assets/switch_ios_right.svg')
+    document.getElementById('switch_dl').setAttribute('src', '/Assets/switch_ios_right.svg')
     document.getElementById('pied').style.borderTopColor = 'rgba(240, 240, 240, 0.5)'
-    document.getElementById('arrow_top').setAttribute('src', 'Assets/arrow_up_circle_light.svg')
-    document.getElementById('menu_burger').setAttribute('src', 'Assets/burger_menu_light.svg')
+    document.getElementById('arrow_top').setAttribute('src', '/Assets/arrow_up_circle_light.svg')
+    document.getElementById('menu_burger').setAttribute('src', '/Assets/burger_menu_light.svg')
     document.getElementById("burger_menu").style.borderRightColor = 'rgba(240, 240, 240, 0.5)'
     document.getElementById("burger_menu").style.backgroundColor = '#0B0B0B'
-    document.getElementById("cross").setAttribute("src", "Assets/cross_light.svg")
+    document.getElementById("cross").setAttribute("src", "/Assets/cross_light.svg")
     
     if (document.title == 'CHALENCON Yoan | Accueil'){
         document.getElementById('cta_accueil').style.color = '#0b0b0b'
-        document.getElementById('icon_cta').setAttribute('src', 'Assets/arrow_down_circle_dark.svg')
-        document.getElementById('logo_python').setAttribute('src', 'Assets/Logos/python_light.svg')
-        document.getElementById('logo_html').setAttribute('src', 'Assets/Logos/html_light.svg')
-        document.getElementById('logo_figma').setAttribute('src', 'Assets/Logos/figma_light.svg')
+        document.getElementById('icon_cta').setAttribute('src', '/Assets/arrow_down_circle_dark.svg')
+        document.getElementById('logo_python').setAttribute('src', '/Assets/Logos/python_light.svg')
+        document.getElementById('logo_html').setAttribute('src', '/Assets/Logos/html_light.svg')
+        document.getElementById('logo_figma').setAttribute('src', '/Assets/Logos/figma_light.svg')
     }
     if (document.title == 'CHALENCON Yoan | Python'){
         document.getElementById('cta_accueil').style.color = '#0b0b0b'
-        document.getElementById('icon_cta').setAttribute('src', 'Assets/arrow_down_circle_dark.svg')
-        document.getElementById('presentation_image').setAttribute('src', 'Assets/Logos/python_light.svg')
+        document.getElementById('icon_cta').setAttribute('src', '/Assets/arrow_down_circle_dark.svg')
+        document.getElementById('presentation_image').setAttribute('src', '/Assets/Logos/python_light.svg')
         var buttons = document.querySelectorAll('.logo_download');
         for (var i = 0; i < buttons.length; i++) {
-            buttons[i].setAttribute('src', 'Assets/icon_download_dark.svg');
+            buttons[i].setAttribute('src', '/Assets/icon_download_dark.svg');
         }
         var telechargement = document.querySelectorAll('.real_button');
         for (var i = 0; i < telechargement.length; i++) {
@@ -179,16 +179,16 @@ function to_dark(){
 
     if (document.title == 'CHALENCON Yoan | Site Internet'){
         document.getElementById('cta_accueil').style.color = '#0b0b0b'
-        document.getElementById('icon_cta').setAttribute('src', 'Assets/Logos/github_dark.svg')
+        document.getElementById('icon_cta').setAttribute('src', '/Assets/Logos/github_dark.svg')
     }
 
     if (document.title == 'CHALENCON Yoan | Design'){
         document.getElementById('cta_accueil').style.color = '#0b0b0b'
-        document.getElementById('icon_cta').setAttribute('src', 'Assets/arrow_down_circle_dark.svg')
-        document.getElementById('presentation_image').setAttribute('src', 'Assets/Logos/figma_light.svg')
+        document.getElementById('icon_cta').setAttribute('src', '/Assets/arrow_down_circle_dark.svg')
+        document.getElementById('presentation_image').setAttribute('src', '/Assets/Logos/figma_light.svg')
         var buttons = document.querySelectorAll('.logo_open');
         for (var i = 0; i < buttons.length; i++) {
-            buttons[i].setAttribute('src', 'Assets/Logos/figma_border_dark.svg');
+            buttons[i].setAttribute('src', '/Assets/Logos/figma_border_dark.svg');
         }
         var telechargement = document.querySelectorAll('.real_button_design');
         for (var i = 0; i < telechargement.length; i++) {
@@ -198,7 +198,7 @@ function to_dark(){
 
     if (document.title == 'CHALENCON Yoan | Bénévolat'){
         document.getElementById('cta_accueil').style.color = '#0b0b0b'
-        document.getElementById('icon_cta').setAttribute('src', 'Assets/Logos/discord_dark.svg')
+        document.getElementById('icon_cta').setAttribute('src', '/Assets/Logos/discord_dark.svg')
     }
 
     if (document.title == 'CHALENCON Yoan | Contact'){
@@ -206,10 +206,10 @@ function to_dark(){
         document.getElementById('button2').style.color = '#0b0b0b'
         document.getElementById('button3').style.color = '#0b0b0b'
         document.getElementById('button4').style.color = '#0b0b0b'
-        document.getElementById('mail_logo').setAttribute('src', 'Assets/icon_mail_dark.svg')
-        document.getElementById('twitter_logo').setAttribute('src', 'Assets/Logos/twitter_dark.svg')
-        document.getElementById('discord_logo').setAttribute('src', 'Assets/Logos/discord_dark.svg')
-        document.getElementById('linkedin_logo').setAttribute('src', 'Assets/Logos/linkedin_dark.svg')
+        document.getElementById('mail_logo').setAttribute('src', '/Assets/icon_mail_dark.svg')
+        document.getElementById('twitter_logo').setAttribute('src', '/Assets/Logos/twitter_dark.svg')
+        document.getElementById('discord_logo').setAttribute('src', '/Assets/Logos/discord_dark.svg')
+        document.getElementById('linkedin_logo').setAttribute('src', '/Assets/Logos/linkedin_dark.svg')
     }
 
     if (document.title == "CHALENCON Yoan | Conditions Générales d'Utilisation" || document.title == 'CHALENCON Yoan | Mentions Légales' || document.title == 'CHALENCON Yoan | Politique de Confidentialité'){
@@ -222,7 +222,7 @@ function to_dark(){
             links_intro[i].style.color = '#FF6B18';
         }
         document.getElementById("button_download").style.color = '#0b0b0b'
-        document.getElementById("icon_dl_contrat").setAttribute('src', 'Assets/icon_download_dark.svg')
+        document.getElementById("icon_dl_contrat").setAttribute('src', '/Assets/icon_download_dark.svg')
     }
 }
 

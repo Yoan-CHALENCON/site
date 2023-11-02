@@ -44,4 +44,5 @@ Modification de la balise G-Analytics.
 
 2 Novembre 2023 : Rectificatif.
 Mise à jour de l'adresse mail de contact dans les CGUs et les Mentions Légales.
-Modification des chemins d'accès de la page 404 pour les passer en absolus.
+Modification des chemins d'accès de la page 404 et du JavaScript pour les passer en absolus.
+Mise en commentaire d'une couleur d'arrière-plan invisible dans le CSS.

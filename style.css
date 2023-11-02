@@ -577,7 +577,7 @@ pre{
 
 @media (width < 1050px){
     nav{
-        background-color: blue;
+        /* background-color: blue; */
         display: none;
     }
 
