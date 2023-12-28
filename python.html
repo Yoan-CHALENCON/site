@@ -299,7 +299,19 @@
           ><a href="contact.html" id="link_contact">Contact</a></pre>
         </div>
         <div id="copyright">
-          <p>© 2023 CHALENCON Yoan. Tous droits réservés.</p>
+          <p id="currentYear">
+            <script>
+              date = new Date();
+              year = date.getFullYear();
+              if (year == "2023") {
+                document.getElementById("currentYear").innerHTML = "© 2023";
+              } else {
+                document.getElementById("currentYear").innerHTML =
+                  "© 2023 - " + year;
+              }
+            </script>
+            CHALENCON Yoan. Tous droits réservés.
+          </p>
         </div>
       </footer>
     </div>
