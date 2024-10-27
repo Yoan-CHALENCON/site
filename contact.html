@@ -22,44 +22,57 @@
 
   <body>
     <header id="navbar">
-      <nav>
-        <li>
-          <p><a href="index.html" id="accueil" class="hover">Accueil</a></p>
-        </li>
-        <li>
-          <p><a href="python.html" id="python" class="hover">Python</a></p>
-        </li>
-        <li>
-          <p>
-            <a href="site.html" id="site_internet" class="hover"
-              >Site Internet</a
-            >
-          </p>
-        </li>
-        <li>
-          <p><a href="design.html" id="design" class="hover">Design</a></p>
-        </li>
-        <li>
-          <p>
-            <a href="benevolat.html" id="benevolat" class="hover">Bénévolat</a>
-          </p>
-        </li>
-      </nav>
-      <div id="nav_mobile">
-        <a id="open_menu" onclick="openMenu()">
-          <img src="Assets/burger_menu_light.svg" id="menu_burger" />
-        </a>
+      <div id="newVersionBanner">
+        <span
+          >🚧 Une nouvelle version du site sera déployée prochainement !
+          🏗️</span
+        >
+        <button id="closeBanner">
+          <img src="/Assets/cross_light.svg" alt="Cross Icon" />
+        </button>
       </div>
-      <div id="logo">
-        <img src="Assets/profil_picture_square_rounded.png" />
-      </div>
-      <div id="switch">
-        <img
-          src="Assets/switch_ios_right.svg"
-          id="switch_dl"
-          onclick="switch_dark_light_mode()"
-          onmousedown="press()"
-        />
+      <div id="realHeader">
+        <nav>
+          <li>
+            <p><a href="index.html" id="accueil" class="hover">Accueil</a></p>
+          </li>
+          <li>
+            <p><a href="python.html" id="python" class="hover">Python</a></p>
+          </li>
+          <li>
+            <p>
+              <a href="site.html" id="site_internet" class="hover"
+                >Site Internet</a
+              >
+            </p>
+          </li>
+          <li>
+            <p><a href="design.html" id="design" class="hover">Design</a></p>
+          </li>
+          <li>
+            <p>
+              <a href="benevolat.html" id="benevolat" class="hover"
+                >Bénévolat</a
+              >
+            </p>
+          </li>
+        </nav>
+        <div id="nav_mobile">
+          <a id="open_menu" onclick="openMenu()">
+            <img src="Assets/burger_menu_light.svg" id="menu_burger" />
+          </a>
+        </div>
+        <div id="logo">
+          <img src="Assets/profil_picture_square_rounded.png" />
+        </div>
+        <div id="switch">
+          <img
+            src="Assets/switch_ios_right.svg"
+            id="switch_dl"
+            onclick="switch_dark_light_mode()"
+            onmousedown="press()"
+          />
+        </div>
       </div>
     </header>
     <div id="burger_menu" class="menu">
