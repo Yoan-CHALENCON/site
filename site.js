@@ -79,7 +79,7 @@ function to_light() {
     .getElementById("cross")
     .setAttribute("src", "/Assets/cross_dark.svg");
 
-  if (document.title == "CHALENCON Yoan | Accueil") {
+  if (document.title == "Yoan CHALENCON | Accueil") {
     document
       .getElementById("icon_cta")
       .setAttribute("src", "/Assets/arrow_down_circle_light.svg");
@@ -95,7 +95,7 @@ function to_light() {
       .setAttribute("src", "/Assets/Logos/figma_dark.svg");
   }
 
-  if (document.title == "CHALENCON Yoan | Python") {
+  if (document.title == "Yoan CHALENCON | Python") {
     document.getElementById("cta_accueil").style.color = "#f0f0f0";
     document
       .getElementById("icon_cta")
@@ -113,14 +113,14 @@ function to_light() {
     }
   }
 
-  if (document.title == "CHALENCON Yoan | Site Internet") {
+  if (document.title == "Yoan CHALENCON | Site Internet") {
     document.getElementById("cta_accueil").style.color = "#f0f0f0";
     document
       .getElementById("icon_cta")
       .setAttribute("src", "/Assets/Logos/github_light.svg");
   }
 
-  if (document.title == "CHALENCON Yoan | Design") {
+  if (document.title == "Yoan CHALENCON | Design") {
     document.getElementById("cta_accueil").style.color = "#f0f0f0";
     document
       .getElementById("icon_cta")
@@ -138,14 +138,14 @@ function to_light() {
     }
   }
 
-  if (document.title == "CHALENCON Yoan | Bénévolat") {
+  if (document.title == "Yoan CHALENCON | Bénévolat") {
     document.getElementById("cta_accueil").style.color = "#f0f0f0";
     document
       .getElementById("icon_cta")
       .setAttribute("src", "/Assets/Logos/discord_light.svg");
   }
 
-  if (document.title == "CHALENCON Yoan | Contact") {
+  if (document.title == "Yoan CHALENCON | Contact") {
     document.getElementById("button1").style.color = "#f0f0f0";
     document.getElementById("button2").style.color = "#f0f0f0";
     document.getElementById("button3").style.color = "#f0f0f0";
@@ -165,9 +165,9 @@ function to_light() {
   }
 
   if (
-    document.title == "CHALENCON Yoan | Conditions Générales d'Utilisation" ||
-    document.title == "CHALENCON Yoan | Mentions Légales" ||
-    document.title == "CHALENCON Yoan | Politique de Confidentialité"
+    document.title == "Yoan CHALENCON | Conditions Générales d'Utilisation" ||
+    document.title == "Yoan CHALENCON | Mentions Légales" ||
+    document.title == "Yoan CHALENCON | Politique de Confidentialité"
   ) {
     var links = document.querySelectorAll(".article_content a");
     for (var i = 0; i < links.length; i++) {
@@ -215,7 +215,7 @@ function to_dark() {
     .getElementById("cross")
     .setAttribute("src", "/Assets/cross_light.svg");
 
-  if (document.title == "CHALENCON Yoan | Accueil") {
+  if (document.title == "Yoan CHALENCON | Accueil") {
     document.getElementById("cta_accueil").style.color = "#0b0b0b";
     document
       .getElementById("icon_cta")
@@ -230,7 +230,7 @@ function to_dark() {
       .getElementById("logo_figma")
       .setAttribute("src", "/Assets/Logos/figma_light.svg");
   }
-  if (document.title == "CHALENCON Yoan | Python") {
+  if (document.title == "Yoan CHALENCON | Python") {
     document.getElementById("cta_accueil").style.color = "#0b0b0b";
     document
       .getElementById("icon_cta")
@@ -248,14 +248,14 @@ function to_dark() {
     }
   }
 
-  if (document.title == "CHALENCON Yoan | Site Internet") {
+  if (document.title == "Yoan CHALENCON | Site Internet") {
     document.getElementById("cta_accueil").style.color = "#0b0b0b";
     document
       .getElementById("icon_cta")
       .setAttribute("src", "/Assets/Logos/github_dark.svg");
   }
 
-  if (document.title == "CHALENCON Yoan | Design") {
+  if (document.title == "Yoan CHALENCON | Design") {
     document.getElementById("cta_accueil").style.color = "#0b0b0b";
     document
       .getElementById("icon_cta")
@@ -273,14 +273,14 @@ function to_dark() {
     }
   }
 
-  if (document.title == "CHALENCON Yoan | Bénévolat") {
+  if (document.title == "Yoan CHALENCON | Bénévolat") {
     document.getElementById("cta_accueil").style.color = "#0b0b0b";
     document
       .getElementById("icon_cta")
       .setAttribute("src", "/Assets/Logos/discord_dark.svg");
   }
 
-  if (document.title == "CHALENCON Yoan | Contact") {
+  if (document.title == "Yoan CHALENCON | Contact") {
     document.getElementById("button1").style.color = "#0b0b0b";
     document.getElementById("button2").style.color = "#0b0b0b";
     document.getElementById("button3").style.color = "#0b0b0b";
@@ -300,9 +300,9 @@ function to_dark() {
   }
 
   if (
-    document.title == "CHALENCON Yoan | Conditions Générales d'Utilisation" ||
-    document.title == "CHALENCON Yoan | Mentions Légales" ||
-    document.title == "CHALENCON Yoan | Politique de Confidentialité"
+    document.title == "Yoan CHALENCON | Conditions Générales d'Utilisation" ||
+    document.title == "Yoan CHALENCON | Mentions Légales" ||
+    document.title == "Yoan CHALENCON | Politique de Confidentialité"
   ) {
     var links = document.querySelectorAll(".article_content a");
     for (var i = 0; i < links.length; i++) {

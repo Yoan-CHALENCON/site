@@ -1,7 +1,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>CHALENCON Yoan | Accueil</title>
+    <title>Yoan CHALENCON | Accueil</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="Assets/profil_picture_square_rounded.png" />
     <!-- Google tag (gtag.js) -->
@@ -110,7 +110,7 @@
     /></a>
     <div id="corps">
       <div id="title">
-        <h1>CHALENCON Yoan</h1>
+        <h1>Yoan CHALENCON</h1>
         <h2>
           Passionné par l’informatique, les nouvelles technologies et l’espace.
         </h2>
@@ -151,13 +151,26 @@
             <p>
               Bonjour !
               <br />
-              <br />Je m’appelle CHALENCON Yoan, j’ai 18 ans et je suis
-              originaire d'un petit village ardéchois. <br />Je viens de
-              commencer mes études supérieures. Je suis actuellement en première
-              année de BUT Informatique à l'IUT de Valence (Drôme). Ma passion
-              pour l’informatique m’a incité à choisir cette formation. Et, même
-              si je n'ai pas encore d'idée précise sur le métier que je souhaite
-              faire plus tard, je voudrais combiner ma passion et mon travail.
+              <br />Je m’appelle Yoan CHALENCON, j’ai
+              <script>
+                date = new Date();
+                const birthDate = new Date(2005, 2, 17);
+                let age = date.getFullYear() - birthDate.getFullYear();
+                const monthDiff = date.getMonth() - birthDate.getMonth();
+                if (
+                  monthDiff < 0 ||
+                  (monthDiff === 0 && date.getDate() < birthDate.getDate())
+                ) {
+                  age--;
+                }
+                document.write(age);
+              </script>
+              ans et je suis originaire d'un petit village ardéchois. <br />Je
+              suis actuellement en deuxième année de BUT Informatique à l'IUT de
+              Valence (Drôme). Ma passion pour l’informatique m’a incité à
+              choisir cette formation. Je voudrais combiner ma passion et mon
+              travail. C'est la raison pour laquelle je souhaite devenir
+              développeur Web <i>fullstack</i>.
               <br />
               <br />Dans la vie, j’adore tout ce qui touche de près ou loin à
               l’informatique et aux nouvelles technologies, il s’agit de vraies
@@ -172,7 +185,7 @@
               tant que bénévole.
             </p>
             <br /><br />
-            <p id="sign">CHALENCON Yoan</p>
+            <p id="sign">Yoan CHALENCON</p>
           </div>
         </div>
       </div>
@@ -284,7 +297,7 @@
                   "© 2023 - " + year;
               }
             </script>
-            CHALENCON Yoan. Tous droits réservés.
+            Yoan CHALENCON. Tous droits réservés.
           </p>
         </div>
       </footer>

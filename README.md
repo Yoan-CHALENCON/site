@@ -1,5 +1,5 @@
-Code source du site https://chalenconyoan.com
-**© 2023 CHALENCON Yoan. Tous droits réservés.**
+Code source du site https://yoan-chalencon.fr
+**© 2023 Yoan CHALENCON. Tous droits réservés.**
 
 12 Avril 2023 : Mise en place du repository GitHub.
 Présence uniquement des fichiers de maintenance, le site étant en cours de construction.
