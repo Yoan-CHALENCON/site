@@ -1,0 +1,206 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Yoan CHALENCON | ADE Redesign</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="Assets/Logos/adeRedesign.svg" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-J7LWMP39SR"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-J7LWMP39SR");
+    </script>
+  </head>
+
+  <body>
+    <header id="navbar">
+      <div id="newVersionBanner">
+        <span
+          >🚧 Une nouvelle version du site sera déployée prochainement !
+          🏗️</span
+        >
+        <button id="closeBanner">
+          <img src="/Assets/cross_light.svg" alt="Cross Icon" />
+        </button>
+      </div>
+      <div id="realHeader">
+        <nav>
+          <li>
+            <p><a href="index.html" id="accueil" class="hover">Accueil</a></p>
+          </li>
+          <li>
+            <p class="active">ADE Redesign</p>
+          </li>
+          <li>
+            <p><a href="python.html" id="python" class="hover">Python</a></p>
+          </li>
+          <li>
+            <p>
+              <a href="site.html" id="site_internet" class="hover"
+                >Site Internet</a
+              >
+            </p>
+          </li>
+          <li>
+            <p><a href="design.html" id="design" class="hover">Design</a></p>
+          </li>
+          <li>
+            <p>
+              <a href="benevolat.html" id="benevolat" class="hover"
+                >Bénévolat</a
+              >
+            </p>
+          </li>
+        </nav>
+        <div id="nav_mobile">
+          <a id="open_menu" onclick="openMenu()">
+            <img src="Assets/burger_menu_light.svg" id="menu_burger" />
+          </a>
+        </div>
+        <div id="logo">
+          <img src="Assets/profil_picture_square_rounded.png" />
+        </div>
+        <div id="switch">
+          <img
+            src="Assets/switch_ios_right.svg"
+            id="switch_dl"
+            onclick="switch_dark_light_mode()"
+            onmousedown="press()"
+          />
+        </div>
+      </div>
+    </header>
+    <div id="burger_menu" class="menu">
+      <a id="close_menu" class="close">
+        <img src="Assets/cross_light.svg" onclick="closeMenu()" id="cross" />
+      </a>
+      <ul>
+        <li>
+          <p><a href="index.html" id="accueil_bm" class="hover">Accueil</a></p>
+        </li>
+        <li>
+          <p class="active">ADE Redesign</p>
+        </li>
+        <li>
+          <p><a href="python.html" id="python_bm" class="hover">Python</a></p>
+        </li>
+        <li>
+          <p>
+            <a href="site.html" id="site_internet_bm" class="hover"
+              >Site Internet</a
+            >
+          </p>
+        </li>
+        <li>
+          <p><a href="design.html" id="design_bm" class="hover">Design</a></p>
+        </li>
+        <li>
+          <p>
+            <a href="benevolat.html" id="benevolat_bm" class="hover"
+              >Bénévolat</a
+            >
+          </p>
+        </li>
+      </ul>
+    </div>
+    <a href="#top"
+      ><img src="Assets/arrow_up_circle_light.svg" id="arrow_top"
+    /></a>
+    <div id="corps">
+      <div id="title">
+        <h1>ADE Redesign</h1>
+        <h2>Mon projet de redesign de l'interface d'Adesoft<sup>®</sup>.</h2>
+      </div>
+      <div id="presentation">
+        <div id="image">
+          <div id="background">
+            <img id="presentation_image" src="Assets/adeRedesignCover.png" />
+            <div id="CTA">
+              <a href="https://ade-edt.fr" target="_blank">
+                <img
+                  id="icon_cta"
+                  src="Assets/externalLinkDark.svg"
+                  onmouseover="underline('cta_accueil')"
+                  onmouseout="underline_off('cta_accueil')"
+                />
+              </a>
+              <a href="https://ade-edt.fr" target="_blank">
+                <p
+                  id="cta_accueil"
+                  class="cta"
+                  onmouseover="underline('cta_accueil')"
+                  onmouseout="underline_off('cta_accueil')"
+                >
+                  Voir le site
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div id="text">
+          <div id="content">
+            <h3>PROJET PERSONNEL</h3>
+            <h4>
+              Mon interface pour les emplois du temps d'Adesoft<sup>®</sup>
+            </h4>
+            <p>
+              ADE Redesign est un projet que j'ai créé en tant qu'étudiant en
+              BUT Informatique à l’IUT de Valence (26). L’objectif est de
+              proposer une nouvelle interface pour Adesoft<sup>®</sup>. Ce
+              logiciel est utilisé par de nombreuses universités pour gérer les
+              emplois du temps des étudiants et des enseignants. <br />
+              Malgré un outil qui semble plutôt fonctionnel, il est indéniable
+              que l’interface n’a pas été mise à jour depuis plusieurs années.
+              Le changement de semaine n’est pas pratique à utiliser et
+              l’affichage sur mobile n’a pas été adapté. <br /><br />
+              L’intention derrière le projet ADE Redesign est donc de mettre à
+              disposition des étudiants et des enseignants un nouveau site pour
+              visualiser leur emploi du temps.
+            </p>
+          </div>
+        </div>
+      </div>
+      <footer id="pied">
+        <div id="buttons_footer">
+          <pre class="hover"><a href="cgu.html" id="link_cgu">CGU</a></pre>
+          <pre> | </pre>
+          <pre
+            class="hover"
+          ><a href="mentions-legales.html" id="link_mentions">Mentions Légales</a></pre>
+          <pre> | </pre>
+          <pre
+            class="hover"
+          ><a href="pol-conf.html" id="link_pol_conf">Politique de Confidentialité</a></pre>
+          <pre> | </pre>
+          <pre
+            class="hover"
+          ><a href="contact.html" id="link_contact">Contact</a></pre>
+        </div>
+        <div id="copyright">
+          <p id="currentYear">
+            <script>
+              date = new Date();
+              year = date.getFullYear();
+              if (year == "2023") {
+                document.getElementById("currentYear").innerHTML = "© 2023";
+              } else {
+                document.getElementById("currentYear").innerHTML =
+                  "© 2023 - " + year;
+              }
+            </script>
+            Yoan CHALENCON. Tous droits réservés.
+          </p>
+        </div>
+      </footer>
+    </div>
+    <script src="site.js"></script>
+  </body>
+</html>

@@ -113,6 +113,13 @@ function to_light() {
     }
   }
 
+  if (document.title == "Yoan CHALENCON | ADE Redesign") {
+    document.getElementById("cta_accueil").style.color = "#f0f0f0";
+    document
+      .getElementById("icon_cta")
+      .setAttribute("src", "/Assets/externalLinkLight.svg");
+  }
+
   if (document.title == "Yoan CHALENCON | Site Internet") {
     document.getElementById("cta_accueil").style.color = "#f0f0f0";
     document
@@ -246,6 +253,13 @@ function to_dark() {
     for (var i = 0; i < telechargement.length; i++) {
       telechargement[i].style.color = "#0b0b0b";
     }
+  }
+
+  if (document.title == "Yoan CHALENCON | ADE Redesign") {
+    document.getElementById("cta_accueil").style.color = "#0b0b0b";
+    document
+      .getElementById("icon_cta")
+      .setAttribute("src", "/Assets/externalLinkDark.svg");
   }
 
   if (document.title == "Yoan CHALENCON | Site Internet") {

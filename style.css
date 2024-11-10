@@ -288,9 +288,15 @@ h4 {
   width: 100%;
 }
 
+#real0 {
+  /*background-color: yellow;*/
+  display: flex;
+}
+
 #real1 {
   /*background-color: yellow;*/
   display: flex;
+  margin-top: 200px;
 }
 
 #real2 {
@@ -614,7 +620,7 @@ pre {
   color: #ff6b18;
 }
 
-@media (width < 1050px) {
+@media (width < 1400px) {
   nav {
     /* background-color: blue; */
     display: none;
@@ -652,7 +658,7 @@ pre {
   }
 
   .menu li {
-    margin-top: 100px;
+    margin-top: 80px;
   }
 
   .menu.active {
@@ -753,6 +759,7 @@ pre {
 }
 
 .hover:hover,
+#link_ade:hover,
 #link_python:hover,
 #link_site_internet:hover,
 #link_design:hover,
