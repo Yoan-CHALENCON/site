@@ -1,10 +1,9 @@
-import { Laptop } from "lucide-react";
+import Header from "../ components/Header";
 
 export default function Home() {
   return (
-    <h1 className="text-secondary font-mono">
-      <Laptop />
-      Yoan CHALENCON
-    </h1>
+    <>
+      <Header />
+    </>
   );
 }
