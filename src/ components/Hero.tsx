@@ -1,3 +1,4 @@
+import A from "./A";
 import Terminal from "./Terminal";
 
 export default function Hero() {
@@ -11,7 +12,11 @@ export default function Hero() {
         <h2 className="text-4xl font-semibold">Développeur Web</h2>
         <h3 className="text-2xl">
           &Eacute;tudiant en 3<sup>e</sup> année de BUT Informatique à l'IUT de
-          Valence et alternant développeur <em>backend</em> chez Kyxar.
+          Valence et alternant développeur <em>backend</em> chez{" "}
+          <A href="https://www.kyxar.fr" _blank>
+            Kyxar
+          </A>
+          .
         </h3>
       </section>
       <section className="flex w-1/2 items-center justify-center">
@@ -27,9 +32,17 @@ export default function Hero() {
           <span className="text-primary">&nbsp;&nbsp;&nbsp;location</span>:
           "Valence",
           <br /> <span className="text-primary">&nbsp;&nbsp;&nbsp;phone</span>:
-          "06 70 25 91 78",
+          "
+          <A href="tel:0670259178" className="text-light!">
+            06 70 25 91 78
+          </A>
+          ",
           <br /> <span className="text-primary">&nbsp;&nbsp;&nbsp;email</span>:
-          "contact@yoan-chalencon.fr",
+          "
+          <A href="mailto:contact@yoan-chalencon.fr" className="text-light!">
+            contact@yoan-chalencon.fr
+          </A>
+          "
           <br />
           <span className="text-yellow-300">{"}"}</span>;
         </Terminal>
