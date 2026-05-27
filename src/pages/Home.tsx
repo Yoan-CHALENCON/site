@@ -1,4 +1,5 @@
 import { FileText, FolderOpen, Puzzle } from "lucide-react";
+import About from "../ components/About";
 import CTA from "../ components/CTA";
 import Header from "../ components/Header";
 import Hero from "../ components/Hero";
@@ -24,6 +25,7 @@ export default function Home() {
             CV
           </CTA>
         </section>
+        <About />
       </Main>
     </>
   );
