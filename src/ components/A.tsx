@@ -1,4 +1,5 @@
 import clsx from "clsx";
+import { Link } from "react-router-dom";
 
 type Props = {
   children: React.ReactNode;
@@ -9,12 +10,12 @@ type Props = {
 
 export default function A(props: Props) {
   return (
-    <a
+    <Link
       target={props._blank ? "_blank" : undefined}
-      href={props.href}
+      to={props.href}
       className={clsx("text-primary hover:underline!", props.className)}
     >
       {props.children}
-    </a>
+    </Link>
   );
 }

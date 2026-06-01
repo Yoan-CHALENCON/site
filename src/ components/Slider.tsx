@@ -1,10 +1,12 @@
 import { ChevronLeft, ChevronRight, CircleArrowRight } from "lucide-react";
 import { useRef, useState } from "react";
+import { Link } from "react-router-dom";
 
 type Props = {
   children: React.ReactNode;
   title: string;
   viewAllHref?: string;
+  id?: string;
 };
 
 export default function Slider(props: Props) {
@@ -43,18 +45,18 @@ export default function Slider(props: Props) {
     "hover:bg-primary/40 rounded-full p-2 transition-all hover:cursor-pointer disabled:cursor-not-allowed disabled:opacity-20";
 
   return (
-    <section className="flex w-full flex-col items-start gap-5">
+    <section id={props.id} className="flex w-full flex-col items-start gap-5">
       <div className="flex w-full justify-between">
         {props.viewAllHref ? (
-          <a
-            href={props.viewAllHref}
+          <Link
+            to={props.viewAllHref}
             className="hover:text-primary hover:underline!"
           >
             <h2 className="flex items-center gap-2 text-4xl font-semibold">
               {props.title}
               <CircleArrowRight size={32} />
             </h2>
-          </a>
+          </Link>
         ) : (
           <h2 className="text-4xl font-semibold">{props.title}</h2>
         )}
