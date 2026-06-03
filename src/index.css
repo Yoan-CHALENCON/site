@@ -72,6 +72,14 @@
   --color-secondary: #ad2cee;
 }
 
+:root {
+  background-color: var(--color-light);
+}
+
+:root.dark {
+  background-color: var(--color-dark);
+}
+
 html,
 body,
 #root {
