@@ -28,7 +28,7 @@ export default function Slider(props: Props) {
     const container = scrollContainerRef.current;
     if (!container) return;
 
-    const scrollAmount = 400;
+    const scrollAmount = 340;
     const newScroll =
       container.scrollLeft +
       (direction === "left" ? -scrollAmount : scrollAmount);
