@@ -1,19 +1,18 @@
+import { Link } from "react-router-dom";
 import PillTag, { type Tag } from "./PillTag";
 
 type Props = {
   title: string;
   description?: string;
   coverImage?: string;
-  href?: string;
+  href: string;
   tags?: Tag[];
 };
 
 export default function ProjectCard(props: Props) {
-  const Card = props.href ? "a" : "article";
-
   return (
-    <Card
-      href={props.href}
+    <Link
+      to={props.href}
       className="group border-dark/20 dark:border-light/20 hover:border-dark/30 dark:hover:border-light/30 shadow-dark/20 dark:shadow-light/20 relative flex w-80 max-w-80 min-w-80 flex-col rounded-md border shadow-md transition-all duration-300 ease-out hover:shadow-lg"
     >
       <div className="relative overflow-hidden rounded-t-md">
@@ -38,6 +37,6 @@ export default function ProjectCard(props: Props) {
           ))}
         </div>
       </div>
-    </Card>
+    </Link>
   );
 }
