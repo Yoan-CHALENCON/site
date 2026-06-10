@@ -12,7 +12,7 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    id: "portfolio",
+    id: "portfolio1",
     title: "Portfolio",
     description:
       "Mon site portfolio développé avec React, TypeScript et Tailwind CSS.",
@@ -26,7 +26,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: "portfolio",
+    id: "portfolio2",
     title: "Portfolio",
     description:
       "Mon site portfolio développé avec React, TypeScript et Tailwind CSS.",
@@ -40,7 +40,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: "portfolio",
+    id: "portfolio3",
     title: "Portfolio",
     description:
       "Mon site portfolio développé avec React, TypeScript et Tailwind CSS.",
@@ -54,7 +54,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: "portfolio",
+    id: "portfolio4",
     title: "Portfolio",
     description:
       "Mon site portfolio développé avec React, TypeScript et Tailwind CSS.",
@@ -68,7 +68,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: "portfolio",
+    id: "portfolio5",
     title: "Portfolio",
     description:
       "Mon site portfolio développé avec React, TypeScript et Tailwind CSS.",
@@ -82,7 +82,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: "portfolio",
+    id: "portfolio6",
     title: "Portfolio",
     description:
       "Mon site portfolio développé avec React, TypeScript et Tailwind CSS.",
