@@ -1,11 +1,11 @@
 import lottie from "lottie-web";
 import { useEffect, useRef, useState } from "react";
-import logoAnimationDark from "../assets/logo/motion_dark.json";
-import logoAnimationLight from "../assets/logo/motion_light.json";
-import logoYCDark from "../assets/logo/yc_without_slash_dark.svg";
-import logoYCLight from "../assets/logo/yc_without_slash_light.svg";
-import logoYoanDark from "../assets/logo/yoan_dark.svg";
-import logoYoanLight from "../assets/logo/yoan_light.svg";
+import logoAnimationDark from "../assets/logo/yoan/motion_dark.json";
+import logoAnimationLight from "../assets/logo/yoan/motion_light.json";
+import logoYCDark from "../assets/logo/yoan/yc_without_slash_dark.svg";
+import logoYCLight from "../assets/logo/yoan/yc_without_slash_light.svg";
+import logoYoanDark from "../assets/logo/yoan/yoan_dark.svg";
+import logoYoanLight from "../assets/logo/yoan/yoan_light.svg";
 import switchLeft from "../assets/switch-theme/left.svg";
 import switchLeftPressed from "../assets/switch-theme/left_pressed.svg";
 import switchRight from "../assets/switch-theme/right.svg";

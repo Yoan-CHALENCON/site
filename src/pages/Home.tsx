@@ -6,6 +6,7 @@ import Header from "../ components/Header";
 import Hero from "../ components/Hero";
 import Main from "../ components/Main";
 import ProjectCard from "../ components/ProjectCard";
+import SkillsSection from "../ components/SkillsSection";
 import Slider from "../ components/Slider";
 import { projects } from "../data/projects";
 
@@ -42,6 +43,7 @@ export default function Home() {
             />
           ))}
         </Slider>
+        <SkillsSection />
         <ExperiencesSection />
       </Main>
     </>

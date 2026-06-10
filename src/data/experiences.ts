@@ -1,6 +1,6 @@
 import type { Tag } from "../ components/PillTag";
-import iut_valence from "../assets/logo/iut-valence_square.svg";
-import kyxar from "../assets/logo/kyxar_circle.svg";
+import iut_valence from "../assets/logo/companies/iut_valence.svg";
+import kyxar from "../assets/logo/companies/kyxar.svg";
 
 export type Experience = {
   id: string;
