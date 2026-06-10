@@ -14,6 +14,24 @@ type Props = {
 };
 
 export default function ExperienceCard(props: Props) {
+  const formater = new Intl.DateTimeFormat("fr-FR", {
+    month: "short",
+    year: "numeric",
+  });
+
+  const [startDateMonth, startDateYear] = props.startDate.split("/");
+  const [endDateMonth, endDateYear] = props.endDate?.split("/") || [];
+
+  const startDateFormatted = formater.format(
+    new Date(parseInt(startDateYear), parseInt(startDateMonth) - 1),
+  );
+
+  const endDateFormatted = props.endDate
+    ? formater.format(
+        new Date(parseInt(endDateYear), parseInt(endDateMonth) - 1),
+      )
+    : null;
+
   return (
     <Link
       to={props.href}
@@ -44,14 +62,14 @@ export default function ExperienceCard(props: Props) {
       <div className="flex shrink-0 flex-col items-center justify-center py-2">
         {props.endDate ? (
           <>
-            <p className="whitespace-nowrap">{props.startDate}</p>
+            <p className="whitespace-nowrap">{startDateFormatted}</p>
             <p>&ndash;</p>
-            <p className="whitespace-nowrap">{props.endDate}</p>
+            <p className="whitespace-nowrap">{endDateFormatted}</p>
           </>
         ) : (
           <>
             <p>Depuis</p>
-            <p className="whitespace-nowrap">{props.startDate}</p>
+            <p className="whitespace-nowrap">{startDateFormatted}</p>
           </>
         )}
       </div>

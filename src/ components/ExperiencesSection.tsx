@@ -20,6 +20,17 @@ export default function ExperiencesSection() {
           <h3 className="text-xl font-bold">Expériences</h3>
           {experiences
             .filter((experience) => experience.path.startsWith("/experiences"))
+            .sort((a, b) => {
+              const [aEndMonth, aEndYear] = a.endDate?.split("/") || [];
+              const [bEndMonth, bEndYear] = b.endDate?.split("/") || [];
+              const dateA = a.endDate
+                ? new Date(parseInt(aEndYear), parseInt(aEndMonth) - 1)
+                : new Date();
+              const dateB = b.endDate
+                ? new Date(parseInt(bEndYear), parseInt(bEndMonth) - 1)
+                : new Date();
+              return dateB.getTime() - dateA.getTime();
+            })
             .map((experience) => (
               <ExperienceCard
                 key={experience.id}
@@ -39,6 +50,17 @@ export default function ExperiencesSection() {
           <h3 className="text-xl font-bold">Formation</h3>
           {experiences
             .filter((experience) => experience.path.startsWith("/formation"))
+            .sort((a, b) => {
+              const [aEndMonth, aEndYear] = a.endDate?.split("/") || [];
+              const [bEndMonth, bEndYear] = b.endDate?.split("/") || [];
+              const dateA = a.endDate
+                ? new Date(parseInt(aEndYear), parseInt(aEndMonth) - 1)
+                : new Date();
+              const dateB = b.endDate
+                ? new Date(parseInt(bEndYear), parseInt(bEndMonth) - 1)
+                : new Date();
+              return dateB.getTime() - dateA.getTime();
+            })
             .map((experience) => (
               <ExperienceCard
                 key={experience.id}
