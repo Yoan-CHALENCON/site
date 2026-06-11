@@ -2,6 +2,7 @@ import { BriefcaseBusiness, FileText, FolderOpen, Puzzle } from "lucide-react";
 import About from "../ components/About";
 import CTA from "../ components/CTA";
 import ExperiencesSection from "../ components/ExperiencesSection";
+import Footer from "../ components/Footer";
 import Header from "../ components/Header";
 import Hero from "../ components/Hero";
 import Main from "../ components/Main";
@@ -50,6 +51,7 @@ export default function Home() {
         <SkillsSection />
         <ExperiencesSection />
       </Main>
+      <Footer />
     </>
   );
 }
