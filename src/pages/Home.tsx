@@ -1,4 +1,4 @@
-import { FileText, FolderOpen, Puzzle } from "lucide-react";
+import { BriefcaseBusiness, FileText, FolderOpen, Puzzle } from "lucide-react";
 import About from "../ components/About";
 import CTA from "../ components/CTA";
 import ExperiencesSection from "../ components/ExperiencesSection";
@@ -24,6 +24,10 @@ export default function Home() {
           <CTA type="link" href="/#skills" scroll>
             <Puzzle />
             Compétences
+          </CTA>
+          <CTA type="link" href="/#experiences" scroll>
+            <BriefcaseBusiness />
+            Expériences
           </CTA>
           <CTA type="link" href="/#cv" blank>
             <FileText />

@@ -5,7 +5,7 @@ import { experiences } from "../data/experiences";
 
 export default function ExperiencesSection() {
   return (
-    <section>
+    <section id="experiences">
       <Link
         to="/experiences"
         className="hover:text-primary flex w-fit hover:underline!"
