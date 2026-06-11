@@ -27,7 +27,7 @@ export default function ProjectCard(props: Props) {
       <div className="flex flex-col gap-5 p-4">
         <div className="flex flex-col gap-1">
           <h3 className="text-lg font-semibold">{props.title}</h3>
-          <p className="line-clamp-1">{props.description}</p>
+          <p className="line-clamp-2">{props.description}</p>
         </div>
         <div className="flex flex-wrap gap-2">
           {props.tags?.map((tag) => (
