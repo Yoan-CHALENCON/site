@@ -62,7 +62,7 @@ export default function Header() {
   }, [logoState, isDarkTheme]);
 
   return (
-    <header className="flex items-center px-6 py-3">
+    <header className="bg-light/50 dark:bg-dark/50 sticky top-0 z-50 flex items-center px-6 py-3 backdrop-blur-sm">
       <div className="flex-1">
         {logoState === "yc" && (
           <img src={logoYCSrc} alt="Logo YC" className="h-10" />

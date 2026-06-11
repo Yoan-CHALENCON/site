@@ -20,7 +20,11 @@ export default function CTA(props: Props) {
 
       if (element) {
         e.preventDefault();
-        element.scrollIntoView({ behavior: "smooth" });
+        const headerHeight =
+          document.querySelector("header")?.offsetHeight || 0;
+        const elementPosition =
+          element.getBoundingClientRect().top + window.scrollY - headerHeight;
+        window.scrollTo({ top: elementPosition, behavior: "smooth" });
         window.history.pushState(null, "", props.href);
       }
     }
