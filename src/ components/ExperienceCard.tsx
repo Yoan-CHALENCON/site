@@ -40,12 +40,12 @@ export default function ExperienceCard(props: Props) {
       <img
         src={props.companyLogo}
         alt={props.companyName}
-        className="aspect-square w-1/6 object-cover p-1"
+        className="aspect-square w-1/6 object-contain p-1"
       />
       <div className="border-dark/20 dark:border-light/20 my-4 self-stretch border-l" />
       <div className="flex flex-1 flex-col gap-2 py-2">
         <h4 className="text-primary text-lg font-bold">
-          {props.title} &ndash; {props.companyName}
+          {props.title}&nbsp;&ndash;&nbsp;{props.companyName}
         </h4>
         <p>{props.subtitle}</p>
         {props.tags && (
