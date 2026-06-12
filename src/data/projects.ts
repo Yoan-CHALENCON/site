@@ -1,7 +1,10 @@
 import type { Tag } from "../ components/PillTag";
 import ade_redesign from "../assets/projects/ade-redesign.png";
+import aifants from "../assets/projects/aifants.png";
+import android from "../assets/projects/android.png";
 import aramis from "../assets/projects/aramis.png";
 import direct_train from "../assets/projects/direct-train.png";
+import godot from "../assets/projects/godot.png";
 import no_photo from "../assets/projects/no-photo.png";
 import photo_share from "../assets/projects/photo-share.png";
 import tintin from "../assets/projects/tintin.png";
@@ -113,7 +116,7 @@ export const projects: Project[] = [
     id: "godot",
     title: "Projet Godot",
     description: "Jeu inspiré de Asteroïds, développé en BUT 3 Informatique.",
-    coverImage: no_photo,
+    coverImage: godot,
     href: "/projects/godot",
     tags: [{ label: "Godot", color: "blue" }],
   },
@@ -122,7 +125,7 @@ export const projects: Project[] = [
     title: "Projets Android",
     description:
       "Applications mobiles de cookie clicker et de contrôleur de jeu, réalisées en BUT 2 Informatique.",
-    coverImage: no_photo,
+    coverImage: android,
     href: "/projects/android",
     tags: [
       { label: "Java", color: "red" },
@@ -134,7 +137,7 @@ export const projects: Project[] = [
     title: "AIFAnts",
     description:
       "Simulation d'IA de fourmis, développée en BUT 3 Informatique.",
-    coverImage: no_photo,
+    coverImage: aifants,
     href: "/projects/aifants",
     tags: [
       { label: "Python", color: "yellow" },
