@@ -7,11 +7,21 @@ export default function About() {
       <section className="flex flex-1 flex-col gap-3 p-3">
         <h2 className="text-4xl font-semibold">À propos de moi</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel
-          sapien eget nunc efficitur commodo. Sed at felis a enim efficitur
-          tincidunt. Curabitur ac ligula a nisl convallis bibendum. In hac
-          habitasse platea dictumst. Nulla facilisi. Donec ut odio sed metus
-          efficitur fermentum. Proin ac nunc id justo efficitur commodo.
+          &Eacute;tudiant en fin de BUT Informatique à l'IUT de Valence, je suis
+          actuellement en alternance dans l'agence Web KYXAR, située à
+          Mours-Saint-Eusèbe (26). Au sein de l'entreprise, je suis développeur{" "}
+          <em>backend</em>. <br />
+          <br />
+          Passionné par l'informatique et les nouvelles technologies depuis de
+          nombreuses années, j'ai choisi de faire du développement Web mon
+          domaine d'expertise. Mon objectif est de devenir développeur Web{" "}
+          <em>fullstack</em> à long terme.
+          <br />
+          <br />
+          Ce portfolio présente mes projets, mes compétences ainsi que mes
+          expériences professionnelles et ma formation. N'hésitez pas à
+          parcourir les différentes sections pour en savoir plus sur mon
+          parcours et mes réalisations.
         </p>
       </section>
     </section>
