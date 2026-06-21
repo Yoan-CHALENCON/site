@@ -47,7 +47,7 @@ export default function ExperienceCard(props: Props) {
         <h4 className="text-primary text-lg font-bold">
           {props.title}&nbsp;&ndash;&nbsp;{props.companyName}
         </h4>
-        <p>{props.subtitle}</p>
+        <p dangerouslySetInnerHTML={{ __html: props.subtitle }} />
         {props.tags && (
           <div className="flex flex-wrap gap-2">
             {props.tags?.map((tag) => (

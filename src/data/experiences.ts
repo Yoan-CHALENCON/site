@@ -21,7 +21,7 @@ export const experiences: Experience[] = [
   {
     id: "alternance-kyxar",
     title: "Alternance",
-    subtitle: "Développeur backend",
+    subtitle: "Développeur Web <em>backend</em>",
     companyName: "KYXAR",
     companyLogo: kyxar,
     startDate: "09/2025",
@@ -36,7 +36,7 @@ export const experiences: Experience[] = [
   {
     id: "cdd-kyxar",
     title: "CDD (emploi étudiant)",
-    subtitle: "Développeur backend",
+    subtitle: "Développeur Web <em>backend</em>",
     companyName: "KYXAR",
     companyLogo: kyxar,
     startDate: "06/2025",
@@ -52,7 +52,7 @@ export const experiences: Experience[] = [
   {
     id: "stage-kyxar",
     title: "Stage (11 semaines)",
-    subtitle: "Développeur backend",
+    subtitle: "Développeur Web <em>backend</em>",
     companyName: "KYXAR",
     companyLogo: kyxar,
     startDate: "03/2025",
@@ -68,7 +68,7 @@ export const experiences: Experience[] = [
   {
     id: "but1-info",
     title: "BUT 1 Informatique",
-    subtitle: "Classement : 1er/76",
+    subtitle: "Classement : 1<sup>er</sup>/76",
     companyName: "IUT de Valence (UGA)",
     companyLogo: iut_valence,
     startDate: "09/2023",
