@@ -1,4 +1,4 @@
-import yoan from "../assets/yoan_square.jpeg";
+import yoan from "../../assets/yoan_square.jpeg";
 
 export default function About() {
   return (

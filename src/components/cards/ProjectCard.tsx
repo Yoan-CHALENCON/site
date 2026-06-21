@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import PillTag, { type Tag } from "./PillTag";
+import PillTag, { type Tag } from "../ui/PillTag";
 
 type Props = {
   title: string;

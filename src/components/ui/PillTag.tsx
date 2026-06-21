@@ -1,4 +1,4 @@
-import { colorMap, type ColorName } from "../utils/colors";
+import { colorMap, type ColorName } from "../../utils/colors";
 
 export type Tag = {
   label: string;

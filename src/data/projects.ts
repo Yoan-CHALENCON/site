@@ -1,4 +1,3 @@
-import type { Tag } from "../ components/PillTag";
 import ade_redesign from "../assets/projects/ade-redesign.png";
 import aifants from "../assets/projects/aifants.png";
 import android from "../assets/projects/android.png";
@@ -8,6 +7,7 @@ import godot from "../assets/projects/godot.png";
 import no_photo from "../assets/projects/no-photo.png";
 import photo_share from "../assets/projects/photo-share.png";
 import tintin from "../assets/projects/tintin.png";
+import type { Tag } from "../components/ui/PillTag";
 
 export type Project = {
   id: string;

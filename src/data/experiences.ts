@@ -1,8 +1,8 @@
-import type { Tag } from "../ components/PillTag";
 import hugo_decrypte from "../assets/logo/companies/hd_media.svg";
 import iut_valence from "../assets/logo/companies/iut_valence.svg";
 import kyxar from "../assets/logo/companies/kyxar.svg";
 import lycee_le_cheylard from "../assets/logo/companies/lycee_le_cheylard.jpg";
+import type { Tag } from "../components/ui/PillTag";
 
 export type Experience = {
   id: string;

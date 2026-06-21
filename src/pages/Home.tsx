@@ -1,14 +1,14 @@
 import { BriefcaseBusiness, FileText, FolderOpen, Puzzle } from "lucide-react";
-import About from "../ components/About";
-import CTA from "../ components/CTA";
-import ExperiencesSection from "../ components/ExperiencesSection";
-import Footer from "../ components/Footer";
-import Header from "../ components/Header";
-import Hero from "../ components/Hero";
-import Main from "../ components/Main";
-import ProjectCard from "../ components/ProjectCard";
-import SkillsSection from "../ components/SkillsSection";
-import Slider from "../ components/Slider";
+import ProjectCard from "../components/cards/ProjectCard";
+import Footer from "../components/layout/Footer";
+import Header from "../components/layout/Header";
+import Main from "../components/Main";
+import About from "../components/sections/About";
+import ExperiencesSection from "../components/sections/ExperiencesSection";
+import Hero from "../components/sections/Hero";
+import SkillsSection from "../components/sections/SkillsSection";
+import CTA from "../components/ui/CTA";
+import Slider from "../components/ui/Slider";
 import { projects } from "../data/projects";
 
 export default function Home() {

@@ -1,7 +1,7 @@
 import { CircleArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import ExperienceCard from "../ components/ExperienceCard";
-import { experiences } from "../data/experiences";
+import { experiences } from "../../data/experiences";
+import ExperienceCard from "../cards/ExperienceCard";
 
 export default function ExperiencesSection() {
   return (

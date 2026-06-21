@@ -1,5 +1,5 @@
-import A from "./A";
-import Terminal from "./Terminal";
+import A from "../ui/A";
+import Terminal from "../ui/Terminal";
 
 function getAge(birthDate: Date) {
   const now = new Date();

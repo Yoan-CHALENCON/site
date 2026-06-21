@@ -1,15 +1,15 @@
 import lottie from "lottie-web";
 import { useEffect, useRef, useState } from "react";
-import logoAnimationDark from "../assets/logo/yoan/motion_dark.json";
-import logoAnimationLight from "../assets/logo/yoan/motion_light.json";
-import logoYCDark from "../assets/logo/yoan/yc_without_slash_dark.svg";
-import logoYCLight from "../assets/logo/yoan/yc_without_slash_light.svg";
-import logoYoanDark from "../assets/logo/yoan/yoan_dark.svg";
-import logoYoanLight from "../assets/logo/yoan/yoan_light.svg";
-import switchLeft from "../assets/switch-theme/left.svg";
-import switchLeftPressed from "../assets/switch-theme/left_pressed.svg";
-import switchRight from "../assets/switch-theme/right.svg";
-import switchRightPressed from "../assets/switch-theme/right_pressed.svg";
+import logoAnimationDark from "../../assets/logo/yoan/motion_dark.json";
+import logoAnimationLight from "../../assets/logo/yoan/motion_light.json";
+import logoYCDark from "../../assets/logo/yoan/yc_without_slash_dark.svg";
+import logoYCLight from "../../assets/logo/yoan/yc_without_slash_light.svg";
+import logoYoanDark from "../../assets/logo/yoan/yoan_dark.svg";
+import logoYoanLight from "../../assets/logo/yoan/yoan_light.svg";
+import switchLeft from "../../assets/switch-theme/left.svg";
+import switchLeftPressed from "../../assets/switch-theme/left_pressed.svg";
+import switchRight from "../../assets/switch-theme/right.svg";
+import switchRightPressed from "../../assets/switch-theme/right_pressed.svg";
 import Nav from "./Nav";
 
 type LogoState = "yc" | "lottie" | "yoan";
