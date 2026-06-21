@@ -1,7 +1,20 @@
 import A from "./A";
 import Terminal from "./Terminal";
 
+function getAge(birthDate: Date) {
+  const now = new Date();
+  let age = now.getFullYear() - birthDate.getFullYear();
+  const hasHadBirthdayThisYear =
+    now.getMonth() > birthDate.getMonth() ||
+    (now.getMonth() === birthDate.getMonth() &&
+      now.getDate() >= birthDate.getDate());
+  if (!hasHadBirthdayThisYear) age--;
+  return age;
+}
+
 export default function Hero() {
+  const age = getAge(new Date(2005, 2, 17));
+
   return (
     <section className="flex p-3">
       <section className="flex w-1/2 flex-col gap-5">
@@ -27,7 +40,7 @@ export default function Hero() {
           "Yoan CHALENCON",
           <br /> <span className="text-primary">
             &nbsp;&nbsp;&nbsp;age
-          </span>: <span className="text-lime-200">21</span>,
+          </span>: <span className="text-lime-200">{age}</span>,
           <br />{" "}
           <span className="text-primary">&nbsp;&nbsp;&nbsp;location</span>:
           "Valence",
