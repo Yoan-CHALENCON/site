@@ -24,7 +24,7 @@ function ScrollToTop() {
 
 export default function App() {
   return (
-    <div className="dark:bg-dark dark:text-light bg-light text-dark min-h-screen">
+    <div className="dark:bg-dark dark:text-light bg-light text-dark min-h-screen flex flex-col justify-between">
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
